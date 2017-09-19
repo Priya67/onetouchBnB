@@ -32,5 +32,12 @@
   "bugs": {
     "url": "https://github.com/Priya67/onetouchBnB/issues"
   },
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "postinstall": "webpack"
+  },
   "homepage": "https://github.com/Priya67/onetouchBnB#readme"
 }
