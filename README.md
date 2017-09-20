@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Link to OneTouchBnB: https://onetouchbnb.herokuapp.com/
