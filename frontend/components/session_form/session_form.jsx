@@ -37,7 +37,6 @@ class SessionForm extends React.Component {
       username: "Priya",
       password: "password"
     });
-    // this.props.processForm({ user }).then(() => this.props.closeModal());
   }
 
   changedemo(e){
@@ -48,10 +47,6 @@ class SessionForm extends React.Component {
       const user = this.state;
       this.props.processForm({ user }).then(() => this.props.closeModal());
     });
-    // console.log("changedemo");
-    // this.setState({
-    //   demo: true
-    // });
   }
 
   renderErrors() {
