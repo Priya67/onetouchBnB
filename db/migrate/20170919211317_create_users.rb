@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :password_digest, null: false
       t.string :session_token, null: false
       t.string :email, null: false
-      t.integer :phone_number, null: false
+      t.string :phone_number, null: false
       t.string :img_url
 
       t.timestamps

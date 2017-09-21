@@ -9,7 +9,7 @@ class SessionForm extends React.Component {
       password: "",
       img_url: "",
       email: "",
-      phone_number: 0
+      phone_number: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -69,7 +69,7 @@ class SessionForm extends React.Component {
             className="signup-input" />
         </label>
         <br/>
-        <button>Add Profile Picture</button>
+        <input type="file" name="pic" accept="image/*" />
       </div>
     );
   }
