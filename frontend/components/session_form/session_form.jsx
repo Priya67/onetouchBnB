@@ -9,15 +9,11 @@ class SessionForm extends React.Component {
       password: "",
       img_url: "",
       email: "",
-      phone_number: ""
+      phone_number: "",
+      demo: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if(nextProps.loggedIn) {
-      this.props.history.push('/');
-    }
+    this.changedemo = this.changedemo.bind(this);
   }
 
   update(field) {
@@ -27,17 +23,35 @@ class SessionForm extends React.Component {
   }
 
   handleSubmit(e) {
+    console.log("I am in submit");
     e.preventDefault();
+    if(this.state.demo===true) {
+      this.demoUser();
+    }
     const user = this.state;
-    this.props.processForm({ user });
+   this.props.processForm({ user }).then(() => this.props.closeModal());
   }
 
-  navLink() {
-    if(this.props.formType === 'login') {
-      return <Link to="/signup">sign up instead</Link>;
-    } else {
-      return <Link to="/login">log in instead</Link>;
-    }
+  demoUser() {
+    this.setState({
+      username: "Priya",
+      password: "password"
+    });
+    // this.props.processForm({ user }).then(() => this.props.closeModal());
+  }
+
+  changedemo(e){
+    this.setState({
+      username: "Priya",
+      password: "password"
+    }, () => {
+      const user = this.state;
+      this.props.processForm({ user }).then(() => this.props.closeModal());
+    });
+    // console.log("changedemo");
+    // this.setState({
+    //   demo: true
+    // });
   }
 
   renderErrors() {
@@ -77,11 +91,8 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to OneTouchBnB!
-          <br />
-          Please {this.props.formType} or {this.navLink()}
-          {this.renderErrors()}
+        {this.renderErrors()}
+        <form onSubmit={this.handleSubmit}>
           <div className="login-form">
             <br />
             <label>Username:
@@ -100,11 +111,12 @@ class SessionForm extends React.Component {
             />
             </label>
             <br />
-              { this.props.formType==='signup' ? this.signupInputs() : "" }
+              { this.props.modalType==='Sign Up' ? this.signupInputs() : "" }
           <br />
-          <input type="submit" value="Submit" />
+          <button>Login</button>
           </div>
         </form>
+        { this.props.modalType==='Sign Up' ? "" : <button onClick={this.changedemo} >demo login</button> }
       </div>
     );
   }

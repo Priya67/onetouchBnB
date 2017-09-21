@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 class Greeting extends React.Component {
   constructor(props) {
     super(props);
+    this.state={actionType:""};
   }
 
   componentDidMount() {
@@ -12,16 +13,18 @@ class Greeting extends React.Component {
 
   render() {
     return (
-      this.props.currentUser ? this.personalGreeting(this.props.currentUser, this.props.logout) : this.sessionLinks()
+      this.props.currentUser ?
+      this.personalGreeting(this.props.currentUser, this.props.logout) :
+      this.sessionLinks()
     );
   }
+
 
   sessionLinks() {
     return (
       <nav className = "login-signup">
-        <Link to="/login" onClick={this.props.clearErrors}>Login</Link>
-        &nbsp;
-        <Link to="/signup" onClick={this.props.clearErrors}>Sign up</Link>
+      <button onClick={this.props.openSignIn}>Sign In</button>
+      <button onClick={this.props.openSignUp}>Sign Up</button>
       </nav>
     );
   }
