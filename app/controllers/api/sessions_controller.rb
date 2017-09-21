@@ -4,11 +4,8 @@ class Api::SessionsController < ApplicationController
                                       params[:user][:password])
     if @user
       login(@user)
-      p "Login a user *********"
-      p @user
       render '/api/users/show'
     else
-      p "Error while logging in a user *********"
       render json: ['Invalid credentials'], status: 422
     end
   end

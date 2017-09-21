@@ -4,8 +4,6 @@ def create
   @user = User.new(user_params)
 
   if @user.save
-    p "Create a user *********"
-    p @user
     login(@user)
     render :show
   else

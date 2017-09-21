@@ -1,23 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const sessionLinks = () => (
-  <nav className = "login-signup">
-    <Link to="/login">Login</Link>
-    &nbsp;
-    <Link to="/signup">Sign up</Link>
-  </nav>
-);
+class Greeting extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-const personalGreeting = (currentUser, logout) => (
-  <hgroup className="header-group">
-    <h2 className="header-name">Hi, {currentUser.username}</h2>
-    <button className="header-button" onClick={logout}>Logout</button>
-  </hgroup>
-);
+  componentDidMount() {
+    this.props.clearErrors();
+  }
 
-const Greeting = ({ currentUser, logout }) => (
-  currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
-);
+  render() {
+    return (
+      this.props.currentUser ? this.personalGreeting(this.props.currentUser, this.props.logout) : this.sessionLinks()
+    );
+  }
+
+  sessionLinks() {
+    return (
+      <nav className = "login-signup">
+        <Link to="/login" onClick={this.props.clearErrors}>Login</Link>
+        &nbsp;
+        <Link to="/signup" onClick={this.props.clearErrors}>Sign up</Link>
+      </nav>
+    );
+  }
+
+  personalGreeting(currentUser, logout) {
+    return (
+      <hgroup className="header-group">
+        <h2 className="header-name">Hi, {currentUser.username}</h2>
+        <button className="header-button" onClick={logout}>Logout</button>
+      </hgroup>
+    );
+  }
+}
 
 export default Greeting;
