@@ -6,6 +6,17 @@ import { Route, HashRouter } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 import Modal from 'react-modal';
 
+
+const customStyles = {
+  content : {
+    top                   : '30%',
+    left                  : '50%',
+    right                 : '60%',
+    bottom                : '13%',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+    }
+};
 // import { AuthRoute, ProtectedRoute } from '../util/route_uil';
 
 class App extends React.Component {
@@ -27,7 +38,8 @@ class App extends React.Component {
         <Modal
           isOpen={this.state.modalOpen==='Sign In' || this.state.modalOpen==='Sign Up'}
           onRequestClose={this.handleToggle('')}
-          contentLabel="modalTest">
+          contentLabel="modalTest"
+          style={customStyles}>
           <SessionFormContainer modalType={this.state.modalOpen}
             closeModal={this.handleToggle('')}/>
         </Modal>
