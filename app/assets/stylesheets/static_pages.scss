@@ -10,9 +10,9 @@ header {
   border-bottom: 1px solid #888888;
 }
 
-h1 {
-  text-align: center;
-}
+// h1 {
+//   text-align: center;
+// }
 
 .login-signup button {
   margin-left: 10px;
@@ -23,6 +23,11 @@ h1 {
      font: inherit;
      cursor: pointer;
      vertical-align: middle;
+}
+
+#user-pic {
+  display: flex;
+  justify-content: space-between;
 }
 
 #search {
@@ -56,5 +61,6 @@ div > button {
 }
 
 div > p {
+  margin-left: 5px;
   text-align: center;
 }

@@ -16,6 +16,10 @@ class SessionForm extends React.Component {
     this.changedemo = this.changedemo.bind(this);
   }
 
+  componentWillUnmount() {
+    this.props.clearErrors();
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -23,11 +27,7 @@ class SessionForm extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log("I am in submit");
     e.preventDefault();
-    // if(this.state.demo===true) {
-    //   this.demoUser();
-    // }
     const user = this.state;
    this.props.processForm({ user }).then(() => this.props.closeModal());
   }

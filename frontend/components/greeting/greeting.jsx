@@ -32,7 +32,10 @@ class Greeting extends React.Component {
   personalGreeting(currentUser, logout) {
     return (
       <hgroup className="header-group">
-        <h2 className="header-name">Hi, {currentUser.username}</h2>
+        <div id="user-pic">
+          <img src="/user.png" />
+          <p className="header-name">{currentUser.username}</p>
+        </div>
         <button className="header-button" onClick={logout}>Logout</button>
       </hgroup>
     );
