@@ -7,7 +7,7 @@
 #  password_digest :string           not null
 #  session_token   :string           not null
 #  email           :string           not null
-#  phone_number    :integer          not null
+#  phone_number    :string           not null
 #  img_url         :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null

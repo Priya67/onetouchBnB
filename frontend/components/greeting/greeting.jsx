@@ -33,7 +33,10 @@ class Greeting extends React.Component {
     return (
       <hgroup className="header-group">
         <div id="user-pic">
-          <img src="/user.png" />
+          {currentUser.img_url===undefined ?
+            <img src='http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506118306/user_aiufn8.png' />
+            : <img src={currentUser.img_url}/>
+          }
           <p className="header-name">{currentUser.username}</p>
         </div>
         <button className="header-button" onClick={logout}>Logout</button>
