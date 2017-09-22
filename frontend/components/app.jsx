@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import { Route, HashRouter } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 import Modal from 'react-modal';
-import { clearErrors } from '../actions/session_actions';
-
 
 const customStyles = {
   content : {
@@ -30,7 +28,6 @@ class App extends React.Component {
   handleToggle(type) {
     return() => {
       this.setState({modalOpen: type});
-      dispatch(clearErrors());
     };
   }
 
