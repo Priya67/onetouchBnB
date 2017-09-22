@@ -12,9 +12,9 @@ const customStyles = {
     top                   : '30%',
     left                  : '50%',
     right                 : '60%',
-    bottom                : '13%',
+    bottom                : '12%',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -30%)'
     }
 };
 // import { AuthRoute, ProtectedRoute } from '../util/route_uil';

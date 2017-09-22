@@ -31,10 +31,14 @@ h1 {
   box-shadow: 2px 2px 2px #888888;
 }
 
-.login-input, .signup-input {
+.login-input[type=text], .login-input[type=password], .signup-input[type=text] {
   width: 100%;
   height: 30px;
   margin-top: 10px;
+}
+
+.login-input[type=text]:focus, .login-input[type=password]:focus, .signup-input[type=text]:focus {
+  background-color: yellow;
 }
 
 div > button {
