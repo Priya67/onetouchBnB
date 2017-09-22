@@ -110,7 +110,6 @@ class SessionForm extends React.Component {
           <button>{this.props.modalType}</button>
           </div>
         </form>
-
         <br />
         { this.props.modalType==='Sign Up' ? "" : <div><p>OR</p><button onClick={this.changedemo} >demo login</button></div> }
       </div>

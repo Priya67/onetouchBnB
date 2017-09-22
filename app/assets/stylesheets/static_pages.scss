@@ -16,19 +16,21 @@ h1 {
 
 .login-signup button {
   margin-left: 10px;
-     background:none!important;
+     background:none;
      color:inherit;
      border:none;
-     padding:0!important;
+     padding:0;
      font: inherit;
      cursor: pointer;
+     vertical-align: middle;
 }
 
 #search {
   width: 300px;
   height: 20px;
-  margin-top: auto;
+  margin-top: 0px;
   box-shadow: 2px 2px 2px #888888;
+  vertical-align: top;
 }
 
 .login-input[type=text], .login-input[type=password], .signup-input[type=text] {
@@ -39,6 +41,11 @@ h1 {
 
 .login-input[type=text]:focus, .login-input[type=password]:focus, .signup-input[type=text]:focus {
   background-color: yellow;
+}
+
+img {
+  height: 30px;
+  width: 30px;
 }
 
 div > button {
