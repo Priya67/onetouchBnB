@@ -25,23 +25,23 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     console.log("I am in submit");
     e.preventDefault();
-    if(this.state.demo===true) {
-      this.demoUser();
-    }
+    // if(this.state.demo===true) {
+    //   this.demoUser();
+    // }
     const user = this.state;
    this.props.processForm({ user }).then(() => this.props.closeModal());
   }
 
-  demoUser() {
-    this.setState({
-      username: "User",
-      password: "password"
-    });
-  }
+  // demoUser() {
+  //   this.setState({
+  //     username: "Priya",
+  //     password: "password"
+  //   });
+  // }
 
   changedemo(e){
     this.setState({
-      username: "Priya",
+      username: "User",
       password: "password"
     }, () => {
       const user = this.state;
