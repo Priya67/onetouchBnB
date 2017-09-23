@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Route, HashRouter } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 import Modal from 'react-modal';
+import SpotIndexContainer from './spot_index/spot_index_container';
 
 const customStyles = {
   content : {
@@ -51,6 +52,7 @@ class App extends React.Component {
             openSignIn={this.handleToggle('Sign In')}
             />
         </header>
+        <SpotIndexContainer />
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </div>
