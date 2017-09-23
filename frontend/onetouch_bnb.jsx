@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import { login, logout, signup } from './util/session_api_util';
-// import { fetchSpots, fetchSpot } from './util/spot_api_util';
+// import { fetchSpots, fetchSpot } from './actions/spot_actions';
 import configureStore from './store/store';
 import Root from './components/root';
 
@@ -16,10 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // const store = configureStore();
   //
   // TESTING START
-  // window.getState = store.getState;
   // window.dispatch = store.dispatch;
-  // window.fetchSpots = fetchSpots;
-  // window.fetchSpot = fetchSpot;
   // TESTING END
 
 
@@ -34,6 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
     store = configureStore();
   }
 
+  // window.dispatch = store.dispatch;
+  // window.getState = store.dispatch;
+  // window.fetchSpots = fetchSpots;
+  // window.fetchSpot = fetchSpot;
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
 });
