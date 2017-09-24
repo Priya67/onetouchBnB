@@ -31,11 +31,22 @@ h3 {
   display: flex;
 }
 
-#spots_img {
-  height: 300px;
-  width: 300px;
+.spots_img {
+  height: 320px;
+  width: 320px;
   border: 1px solid black;
+  border-radius: 3px;
 }
+
+.spots_img:hover {
+    height: 350px;
+    width: 350px;
+    // background-color:#000;
+    opacity:0.8;
+    -webkit-filter: brightness(100%);
+    // border-radius:3px;
+}
+
 
 .login-signup button {
   margin-left: 10px;
@@ -51,6 +62,11 @@ h3 {
 #user-pic {
   display: flex;
   justify-content: space-between;
+}
+
+#user-pic img {
+  border-radius: 30px;
+
 }
 
 #search {
@@ -113,4 +129,9 @@ li {
   margin:auto;
   display: block;
   cursor: pointer;
+}
+
+#map-container {
+  height: 500px;
+  width: 500px;
 }

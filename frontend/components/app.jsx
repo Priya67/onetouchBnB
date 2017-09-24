@@ -7,7 +7,6 @@ import { AuthRoute } from '../util/route_util';
 import Modal from 'react-modal';
 import SpotIndexContainer from './spot_index/spot_index_container';
 import SpotShowContainer from './spot_show/spot_show_container';
-// import SeachContainer from './search/search_container';
 
 const customStyles = {
   content : {
