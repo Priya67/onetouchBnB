@@ -11,7 +11,8 @@ class SpotIndexItem extends React.Component {
   }
 
   handleClick() {
-    const spotId = this.props.spot.it;
+    // console.log(this.);
+    const spotId = this.props.spot.id;
     this.props.history.push(`/spots/${spotId}`);
   }
 
@@ -30,12 +31,18 @@ class SpotIndexItem extends React.Component {
   render() {
     return (
       <li>
-        <img src={this.props.spot.img_url} id="spots_img"/>
-        <p><b>${this.props.spot.price} </b>{this.props.spot.headline}<br />
-        {this.rating(this.props.spot.rating)}</p>
-        <br />
-        <br />
+        <div
+          className="spot-index-item"
+          onClick={this.handleClick}
+        >
+          <img src={this.props.spot.img_url} id="spots_img"/>
+          <p><b>${this.props.spot.price} </b>{this.props.spot.headline}<br />
+          {this.rating(this.props.spot.rating)}</p>
+          <br />
+          <br />
+        </div>
       </li>
+
     );
   }
 }

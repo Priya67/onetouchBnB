@@ -57,7 +57,7 @@ house1 = Spot.create!(
   rating:4.2,
   number_of_beds:'2',
   user_id: priyanka.id,
-  price:400,
+  price:70,
   room_type:'Private',
   cancellations:'Flexible - 24 hours cancellation',
   house_rules:'No smoking \n No drugs \n No parties',
@@ -66,12 +66,12 @@ house1 = Spot.create!(
 house2 = Spot.create!(
   headline:'Luxurious Home',
   description:'Big luxurious home in the heart of Kansas city',
-  location:'near Kansa University',
+  location:'near Kansas University',
   img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house2_vdswgg.jpg',
   rating:3,
   number_of_beds:'1',
   user_id: selena.id,
-  price:600,
+  price:95,
   room_type:'Private',
   cancellations:'Allowed before 7 days of booking date',
   house_rules:'Keep it clean and noise free and no other person allowed other than the guest',
@@ -85,7 +85,7 @@ house3 = Spot.create!(
   rating:3.2,
   number_of_beds:'1',
   user_id: taylor.id,
-  price:600,
+  price:220,
   room_type:'Sharing',
   cancellations:'Inflexible',
   house_rules:'None',
@@ -99,8 +99,64 @@ house4 = Spot.create!(
   rating:4.7,
   number_of_beds:'2',
   user_id: justin.id,
-  price:550,
+  price:250,
   room_type:'Private',
   cancellations:'Allowed if cancelled before 2 days of booking date',
+  house_rules:'No pets allowed'
+)
+
+house5 = Spot.create!(
+  headline:'Neat spacious apartment',
+  description:'Big apartment available for 3 people to live in private rooms',
+  location:'Colonnade apartment, San Jose, CA',
+  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house6_vjbhj1.jpg',
+  rating:5,
+  number_of_beds:'3',
+  user_id: justin.id,
+  price:450,
+  room_type:'Private',
+  cancellations:'Allowed if cancelled before 7 days of booking date',
+  house_rules:'No cats allowed'
+)
+
+house6 = Spot.create!(
+  headline:'Private Room/Bathroom',
+  description:'This is a medium sized room, with two twin mattresses and a private bathroom, in a multi room house. Orange or Apple Juice and Coffee is provided. As our Hotel quality Towels and hand towels, sparkling water, and disinfectant wipes. Shampoo, Conditioner, and bars of soap are provided upon request. No one knows the city better than us. Perfect for Students, Backpackers, and Adventurers. We\'ve had travelers from all over the world and can help cater to your needs. Ask!',
+  location:'250 26th Ave, San Francisco, CA',
+  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_1.jpg',
+  rating:4.5,
+  number_of_beds:'2',
+  user_id: priyanka.id,
+  price:130,
+  room_type:'Private',
+  cancellations:'Cancel up to 24 hours before check in and get a full refund (minus service fees).',
+  house_rules:''
+)
+
+house7 = Spot.create!(
+  headline:'Studio hotel suite near Union Square',
+  description:'Close to Union Square, Nob Hill, Chinatown, and the cable car, this hotel suite offers a quintessential San Francisco experience. Your room at the Worldmark San Francisco is well equipped for exploring the city with a queen size bed, full bathroom, and mini-fridge to store leftovers from the areas many great restaurants.The workout room means you don\'t have to leave your routine when you\'re away from home. The main floor has a free laundry room.Parking is not available at this property.',
+  location:'46 Union Square, San Francisco, CA',
+  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216504/spots/spot_4.jpg',
+  rating:5,
+  number_of_beds:'1',
+  user_id: demo.id,
+  price:300,
+  room_type:'Private',
+  cancellations:'Strict \n Cancel up to 7 days before check in and get a 50% refund (minus service fees).',
   house_rules:'No pets allowed',
+)
+
+house8 = Spot.create!(
+  headline:'One bedroom with city view',
+  description:'View of the bay, fire place and free parking. This is shared space with other guest.',
+  location:'75 Innes Ave, San Francisco, CA',
+  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_5.jpg',
+  rating:4,
+  number_of_beds:'2',
+  user_id: selena.id,
+  price:260,
+  room_type:'Private',
+  cancellations:'Allowed if cancelled before 3 weeks of booking date',
+  house_rules:'No parties',
 )
