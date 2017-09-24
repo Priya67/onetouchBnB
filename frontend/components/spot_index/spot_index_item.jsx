@@ -31,8 +31,10 @@ class SpotIndexItem extends React.Component {
     return (
       <li>
         <img src={this.props.spot.img_url} id="spots_img"/>
-        <p><b>${this.props.spot.price} </b>{this.props.spot.headline}</p>
-        {this.rating(this.props.spot.rating)}
+        <p><b>${this.props.spot.price} </b>{this.props.spot.headline}<br />
+        {this.rating(this.props.spot.rating)}</p>
+        <br />
+        <br />
       </li>
     );
   }
