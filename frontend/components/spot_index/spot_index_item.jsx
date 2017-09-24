@@ -9,11 +9,6 @@ class SpotIndexItem extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentWillMount() {
-    console.log("Cutie");
-    this.props.fetchSpots;
-  }
-
   handleClick() {
     const spotId = this.props.spot.it;
     this.props.history.push(`/spots/${spotId}`);

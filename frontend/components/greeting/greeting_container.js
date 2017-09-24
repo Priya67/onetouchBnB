@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
 import { logout, clearErrors } from '../../actions/session_actions';
+import { fetchSpots } from '../../actions/spot_actions';
 import Greeting from './greeting';
 
 const mapStateToProps = ({ session }) => ({
@@ -9,7 +10,8 @@ const mapStateToProps = ({ session }) => ({
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
-  clearErrors: () => dispatch(clearErrors())
+  clearErrors: () => dispatch(clearErrors()),
+  fetchSpots: () => dispatch(fetchSpots())
 });
 
 export default connect(

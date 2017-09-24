@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchSpots } from '../../actions/session_actions';
+import { fetchSpots } from '../../actions/spot_actions';
 // import RootReducer from '../../reducers/root_reducer';
 import SpotIndex from './spot_index';
 import { asArray } from '../../reducers/selectors';
