@@ -7,6 +7,7 @@ class SpotIndexItem extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.rating = this.rating.bind(this);
   }
 
   handleClick() {
@@ -14,12 +15,24 @@ class SpotIndexItem extends React.Component {
     this.props.history.push(`/spots/${spotId}`);
   }
 
+  rating(length) {
+    console.log("hello"+ length);
+    let r = [];
+    for(let i = 0; i<length; i++) {
+      r.push(<b>{String.fromCharCode(9733)}</b>);
+    }
+    for(let j = 0; j<5-length;j++) {
+      r.push(<b>{String.fromCharCode(9734)}</b>);
+    }
+    return r;
+  }
+
   render() {
     return (
       <li>
         <img src={this.props.spot.img_url} id="spots_img"/>
-        <p>{this.props.spot.headline}</p>
-        <p>Price:{this.props.spot.price}$ Rating: {this.props.spot.rating}</p>
+        <p><b>${this.props.spot.price} </b>{this.props.spot.headline}</p>
+        {this.rating(this.props.spot.rating)}
       </li>
     );
   }
