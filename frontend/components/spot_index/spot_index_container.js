@@ -6,7 +6,6 @@ import { asArray } from '../../reducers/selectors';
 
 const mapStateToProps = state => ({
   spots: asArray(state.entities)
-  // minPrice:
 });
 
 const mapDispatchToProps = dispatch => ({
