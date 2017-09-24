@@ -17,7 +17,6 @@ class SpotIndexItem extends React.Component {
   }
 
   rating(length) {
-    console.log("hello"+ length);
     let r = [];
     for(let i = 0; i<length; i++) {
       r.push(<b>{String.fromCharCode(9733)}</b>);

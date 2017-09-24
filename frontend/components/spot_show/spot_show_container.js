@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { fetchSpot } from '../../actions/spot_actions';
+import { fetchSpot, fetchUser } from '../../actions/spot_actions';
 import { selectSpot } from '../../reducers/selectors';
 import SpotShow from './spot_show';
 
@@ -14,7 +14,8 @@ const mapStateToProps = (state, {match}) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-fetchSpot: (id) => dispatch(fetchSpot(id))
+  fetchSpot: (id) => dispatch(fetchSpot(id)),
+  fetchUser: (id) => dispatch(fetchUser(id))
 });
 
 export default connect(

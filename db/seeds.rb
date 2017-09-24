@@ -51,7 +51,7 @@ justin = User.create!(
 
 house1 = Spot.create!(
   headline:'Beautiful place',
-  description:'Beautiful house near lake and school with all modern amenities',
+  description:'Beautiful house near lake and school with all modern amenities. Please be aware that there are security cameras in the living room (facing the front door) and in the hallways. I have never had a problem and I never watch the video, but I think it is a good deterrent.',
   location:'100 Shore Ave, Syracuse, NY-13209',
   img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_3.jpg',
   rating:4.2,
@@ -60,12 +60,14 @@ house1 = Spot.create!(
   price:70,
   room_type:'Private',
   cancellations:'Flexible - 24 hours cancellation',
-  house_rules:'No smoking \n No drugs \n No parties',
+  house_rules:'No smoking
+   No drugs
+  No parties',
 )
 
 house2 = Spot.create!(
   headline:'Luxurious Home',
-  description:'Big luxurious home in the heart of Kansas city',
+  description:'Big luxurious home in the heart of Kansas city. My place is close to the subway, Goodbye Blue Monday Inc, Tender Trap, and , SoCo. You’ll love my place because of the modern apartment, the great views of the city, and the quick ride to Manhattan. My place is good for couples, solo adventurers, and business travelers.',
   location:'near Kansas University',
   img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house2_vdswgg.jpg',
   rating:3,
@@ -79,7 +81,7 @@ house2 = Spot.create!(
 
 house3 = Spot.create!(
   headline:'Sharing spot in SF',
-  description:'Shared spot available in a big room in Soma Square Apartments located in the heart of SF',
+  description:'Shared spot available in a big room in Soma Square Apartments located in the heart of SF.This a large room in a modern apartment in Bedford-Stuyvesant where I live with my partner. You will enjoy private use of the room as well as access to everything you see in the photos (kitchen, living room, etc). Please note that you may be sharing the common areas with other guests.',
   location:'Soma Square Apartments',
   img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_2.jpg',
   rating:3.2,
@@ -92,22 +94,22 @@ house3 = Spot.create!(
 )
 
 house4 = Spot.create!(
-  headline:'Safe haven',
-  description:'A beautiful private room in available in a big building with laundry and gym facilities',
+  headline:'Room in 2Br /2Ba',
+  description:'If you just want a cheap place to sleep, but you need a clean and convenience place, this will be the right choice for you. 3 mins walk to subway, 45 mins to Manhattan . 10 mins walk to Queens mall, Macy\'s, JCPpenny, Best Buy',
   location:'500 Sip Avenue, Jersey City, New Jersey',
   img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house4_k2zggs.jpg',
   rating:4.7,
   number_of_beds:'2',
   user_id: justin.id,
-  price:250,
-  room_type:'Private',
+  price:80,
+  room_type:'Sharing',
   cancellations:'Allowed if cancelled before 2 days of booking date',
   house_rules:'No pets allowed'
 )
 
 house5 = Spot.create!(
   headline:'Neat spacious apartment',
-  description:'Big apartment available for 3 people to live in private rooms',
+  description:'Big apartment available for 3 people to live in private rooms. You will have this small private bedroom on the upper floor, as well as the shared living room and kitchen (my place is never crowded). You have options to sleep either in the loft bed or the pull-out sofa underneath it. Both beds are full sized. The mattress in the loft bed is memory foam, more preferable. However it would be perfect for 2 people who travel together but don\'t want to share bed. There is also a decent sized closet included in this bedroom.',
   location:'Colonnade apartment, San Jose, CA',
   img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house6_vjbhj1.jpg',
   rating:5,
@@ -143,13 +145,14 @@ house7 = Spot.create!(
   user_id: demo.id,
   price:300,
   room_type:'Private',
-  cancellations:'Strict \n Cancel up to 7 days before check in and get a 50% refund (minus service fees).',
+  cancellations:'Strict
+   Cancel up to 7 days before check in and get a 50% refund (minus service fees).',
   house_rules:'No pets allowed',
 )
 
 house8 = Spot.create!(
   headline:'One bedroom with city view',
-  description:'View of the bay, fire place and free parking. This is shared space with other guest.',
+  description:'View of the bay, fire place and free parking. This is shared space with other guest.Your bathroom would be shared with only me. You will immediately notice how clean I am as a responsible host. Both of the bathroom and the bedroom are fully equipped, including a hairdryer and a steam iron (if it\'s needed).',
   location:'75 Innes Ave, San Francisco, CA',
   img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_5.jpg',
   rating:4,

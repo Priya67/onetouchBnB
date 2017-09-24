@@ -14,6 +14,23 @@ header {
 //   text-align: center;
 // }
 
+.index-image {
+  width: 95%;
+  height: 500px;
+}
+
+#head {
+  display: flex;
+}
+
+h3 {
+  text-align: left;
+}
+
+.spot_show {
+  display: flex;
+}
+
 #spots_img {
   height: 300px;
   width: 300px;

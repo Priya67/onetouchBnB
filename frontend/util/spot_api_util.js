@@ -11,3 +11,11 @@ export const fetchSpot = id => (
       url: `api/spots/${id}`
   })
 );
+
+
+export const fetchUser = id => (
+  $.ajax({
+    method: 'GET',
+    url: `api/users/${id}`
+  })
+);
