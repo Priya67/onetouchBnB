@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import SpotDetail from './spot_detail';
 
-const SpotShow = ({ spot, spotId, fetchSpot, fetchUser }) => {
+const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser }) => {
 
   return (
     <div>
@@ -11,6 +11,7 @@ const SpotShow = ({ spot, spotId, fetchSpot, fetchUser }) => {
         <br />
         <div className="spot-show">
           <SpotDetail spot={spot}
+            user={user}
             fetchUser={fetchUser} />
         </div>
     </div>

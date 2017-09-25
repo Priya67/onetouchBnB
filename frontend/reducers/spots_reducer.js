@@ -1,4 +1,4 @@
-import { RECEIVE_SPOTS, RECEIVE_SPOT, RECEIVE_USER } from '../actions/spot_actions';
+import { RECEIVE_SPOTS, RECEIVE_SPOT } from '../actions/spot_actions';
 import merge from 'lodash/merge';
 
 const SpotsReducer = (state = {}, action) => {
@@ -9,13 +9,9 @@ const SpotsReducer = (state = {}, action) => {
     case RECEIVE_SPOTS:
       return merge({}, state, action.spots);
 
-
     case RECEIVE_SPOT:
       newSpot = merge({}, state, {[action.spot.id]: action.spot});
       return newSpot;
-
-    case RECEIVE_USER:
-      return action.user;
 
     default:
       return state;

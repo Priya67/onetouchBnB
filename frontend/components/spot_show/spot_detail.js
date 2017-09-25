@@ -7,6 +7,10 @@ class SpotDetail extends React.Component {
     this.rating = this.rating.bind(this);
   }
 
+  componentWillMount(){
+    this.props.fetchUser(this.props.spot.user_id);
+  }
+
   rating(length) {
     let r = [];
     for(let i = 0; i<length; i++) {
@@ -25,6 +29,8 @@ render(){
       <ul className="spot_list">
         <img className="index-image" src={this.props.spot.img_url} />
         <li id="head"><h1>{this.props.spot.headline}</h1></li>
+        <br />
+        <li><img src={this.props.user.img_url} /></li>
         <br />
         <li>{this.props.spot.room_type} Room </li>
         <li>{this.rating(this.props.spot.rating)}</li>
