@@ -34,13 +34,38 @@ class SpotMap extends React.Component {
     }
   }
 
+  registerListeners() {
+    google.maps.event.addListener(this.map, 'idle', () => {
+      const { north, south, east, west } = this.map.getBounds().toJSON();
+      const bounds = {
+        northEast: { lat:north, lng: east },
+        southWest: { lat: south, lng: west } };
+      this.props.updateFilter('bounds', bounds);
+    });
+    google.maps.event.addListener(this.map, 'click', (event) => {
+      const coords = getCoordsObj(event.latLng);
+      this.handleClick(coords);
+    });
+  }
+
+  handleMarkerClick(bench) {
+    this.props.history.push(`spot/${spot.id}`);
+  }
+
+  handleClick(coords) {
+    this.props.history.push({
+      pathname: 'spots/new',
+      search: `lat=${coords.lat}&lng=${coords.lng}`
+    });
+  }
+
   render() {
     return (
-      <div id="map-container" ref="map">
-
+      <div className="map" ref="map">
+        Map
       </div>
     );
   }
 }
 
-export default SpotMap;
+export default withRouter(SpotMap);

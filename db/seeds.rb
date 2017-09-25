@@ -14,7 +14,7 @@ demo = User.create!(
   password:'password',
   email:'prettyuser@gmail.com',
   phone_number:'1234567890',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214592/users/Dwayne.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506217948/a38bggaztemedsfjo8z1.jpg'
 )
 
 priyanka = User.create!(
@@ -22,7 +22,7 @@ priyanka = User.create!(
   password:'password',
   email:'priyanka@gmail.com',
   phone_number:'2345678901',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214593/users/priyanka.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214890/users/priyanka.jpg'
 )
 
 selena = User.create!(
@@ -30,7 +30,7 @@ selena = User.create!(
   password:'password',
   email:'selena@gmail.com',
   phone_number:'3456789012',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214593/users/selena.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214593/users/selena.jpg'
 )
 
 taylor = User.create!(
@@ -38,7 +38,7 @@ taylor = User.create!(
   password:'password',
   email:'taylor@gmail.com',
   phone_number:'4567890123',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214592/users/taylor.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214592/users/taylor.jpg'
 )
 
 justin = User.create!(
@@ -46,7 +46,7 @@ justin = User.create!(
   password:'password',
   email:'justin@gmail.com',
   phone_number:'5678901234',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214592/users/justin.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214592/users/justin.jpg'
 )
 
 house1 = Spot.create!(
@@ -83,7 +83,7 @@ house3 = Spot.create!(
   headline:'Sharing spot in SF',
   description:'Shared spot available in a big room in Soma Square Apartments located in the heart of SF.This a large room in a modern apartment in Bedford-Stuyvesant where I live with my partner. You will enjoy private use of the room as well as access to everything you see in the photos (kitchen, living room, etc). Please note that you may be sharing the common areas with other guests.',
   location:'Soma Square Apartments',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_2.jpg',
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_2.jpg',
   rating:3.2,
   number_of_beds:'1',
   user_id: taylor.id,
@@ -97,7 +97,7 @@ house4 = Spot.create!(
   headline:'Room in 2Br /2Ba',
   description:'If you just want a cheap place to sleep, but you need a clean and convenience place, this will be the right choice for you. 3 mins walk to subway, 45 mins to Manhattan . 10 mins walk to Queens mall, Macy\'s, JCPpenny, Best Buy',
   location:'500 Sip Avenue, Jersey City, New Jersey',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house4_k2zggs.jpg',
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house4_k2zggs.jpg',
   rating:4.7,
   number_of_beds:'2',
   user_id: justin.id,
@@ -111,7 +111,7 @@ house5 = Spot.create!(
   headline:'Neat spacious apartment',
   description:'Big apartment available for 3 people to live in private rooms. You will have this small private bedroom on the upper floor, as well as the shared living room and kitchen (my place is never crowded). You have options to sleep either in the loft bed or the pull-out sofa underneath it. Both beds are full sized. The mattress in the loft bed is memory foam, more preferable. However it would be perfect for 2 people who travel together but don\'t want to share bed. There is also a decent sized closet included in this bedroom.',
   location:'Colonnade apartment, San Jose, CA',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house6_vjbhj1.jpg',
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506135165/spots/house6_vjbhj1.jpg',
   rating:5,
   number_of_beds:'3',
   user_id: justin.id,
@@ -125,7 +125,7 @@ house6 = Spot.create!(
   headline:'Private Room/Bathroom',
   description:'This is a medium sized room, with two twin mattresses and a private bathroom, in a multi room house. Orange or Apple Juice and Coffee is provided. As our Hotel quality Towels and hand towels, sparkling water, and disinfectant wipes. Shampoo, Conditioner, and bars of soap are provided upon request. No one knows the city better than us. Perfect for Students, Backpackers, and Adventurers. We\'ve had travelers from all over the world and can help cater to your needs. Ask!',
   location:'250 26th Ave, San Francisco, CA',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_1.jpg',
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_1.jpg',
   rating:4.5,
   number_of_beds:'2',
   user_id: priyanka.id,
@@ -139,7 +139,7 @@ house7 = Spot.create!(
   headline:'Studio hotel suite near Union Square',
   description:'Close to Union Square, Nob Hill, Chinatown, and the cable car, this hotel suite offers a quintessential San Francisco experience. Your room at the Worldmark San Francisco is well equipped for exploring the city with a queen size bed, full bathroom, and mini-fridge to store leftovers from the areas many great restaurants.The workout room means you don\'t have to leave your routine when you\'re away from home. The main floor has a free laundry room.Parking is not available at this property.',
   location:'46 Union Square, San Francisco, CA',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216504/spots/spot_4.jpg',
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216504/spots/spot_4.jpg',
   rating:5,
   number_of_beds:'1',
   user_id: demo.id,
@@ -154,7 +154,8 @@ house8 = Spot.create!(
   headline:'One bedroom with city view',
   description:'View of the bay, fire place and free parking. This is shared space with other guest.Your bathroom would be shared with only me. You will immediately notice how clean I am as a responsible host. Both of the bathroom and the bedroom are fully equipped, including a hairdryer and a steam iron (if it\'s needed).',
   location:'75 Innes Ave, San Francisco, CA',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_5.jpg',
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_5.jpg',
+
   rating:4,
   number_of_beds:'2',
   user_id: selena.id,
