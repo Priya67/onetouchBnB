@@ -53,7 +53,7 @@ house1 = Spot.create!(
   headline:'Beautiful place',
   description:'Beautiful house near lake and school with all modern amenities. Please be aware that there are security cameras in the living room (facing the front door) and in the hallways. I have never had a problem and I never watch the video, but I think it is a good deterrent.',
   location:'100 Shore Ave, Syracuse, NY-13209',
-  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216503/spots/spot_3.jpg',
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506216504/spots/spot_7.jpg',
   rating:4.2,
   number_of_beds:'2',
   user_id: priyanka.id,
