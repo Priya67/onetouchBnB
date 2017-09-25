@@ -36,7 +36,7 @@ class Greeting extends React.Component {
         <div id="user-pic">
 
         {currentUser.img_url==="" ?
-              <img src="http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506118306/user_aiufn8.png" />
+              <img src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506118306/user_aiufn8.png" />
             : <img src={currentUser.img_url}/>
           }
           <p className="header-name">{currentUser.username}</p>

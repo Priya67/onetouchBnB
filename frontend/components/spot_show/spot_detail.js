@@ -37,7 +37,7 @@ render(){
         <br/>
         <li><h3><b><u>Rental Price</u>:  {this.props.spot.price}$ </b></h3> </li>
         <br />
-        <li ><img id="bed" src="http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506245769/spots/bed.png"/>  {this.props.spot.number_of_beds}</li>
+        <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506245769/spots/bed.png"/>  {this.props.spot.number_of_beds}</li>
         <br />
         <br />
         <h3><u>Description</u></h3>
