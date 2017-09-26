@@ -8,7 +8,7 @@ const mapOptions = {
     lat: 37.773972,
     lng: -122.431297
   },
-  zoom: 100
+  zoom: 10
 };
 
 class SpotMap extends React.Component {
@@ -24,6 +24,7 @@ class SpotMap extends React.Component {
 
   makeMap() {
     const map = new google.maps.Map(this.mapNode, mapOptions);
+    google.maps.event.trigger(map, "resize");
   }
 
 
