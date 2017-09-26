@@ -5,3 +5,7 @@ json.extract! spot, :id, :headline, :description,
                     :number_of_bedroom, :number_of_guests,
                     :number_of_bathroom, :lat, :lng, :city,
                     :location
+
+json.user do
+  json.extract! spot.user, :id, :username, :img_url, :fname, :lname
+end

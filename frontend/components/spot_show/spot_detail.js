@@ -7,17 +7,18 @@ class SpotDetail extends React.Component {
     this.rating = this.rating.bind(this);
   }
 
-  componentWillMount(){
-    this.props.fetchUser(this.props.spot.user_id);
+  componentDidMount(){
+    // this.props.fetchUser(this.props.spot.user_id);
+    this.props.fetchSpot(this.props.spotId);
   }
 
   rating(length) {
     let r = [];
     for(let i = 0; i<length; i++) {
-      r.push(<b>{String.fromCharCode(9733)}</b>);
+      r.push(<b key={i}>{String.fromCharCode(9733)}</b>);
     }
     for(let j = 0; j<5-length;j++) {
-      r.push(<b>{String.fromCharCode(9734)}</b>);
+      r.push(<b key={5-j}>{String.fromCharCode(9734)}</b>);
     }
     return r;
   }
@@ -30,7 +31,7 @@ render(){
         <img className="index-image" src={this.props.spot.img_url} />
         <div id="take-on-side">
         <li id="head"><h1>{this.props.spot.headline} in {this.props.spot.city}</h1></li>
-        <li><h3><u>Owner</u>:  {this.props.user.fname}</h3></li>
+        <li><h3><u>Owner</u>:  {this.props.user.fname}, {this.props.user.lname}</h3></li>
         <br />
         <li id="user-pic-home"><img src={this.props.user.img_url}/></li>
         </div>
@@ -41,11 +42,11 @@ render(){
         <br/>
         <li><h3><b><u>Rental Price</u>:  {this.props.spot.price}$ </b></h3> </li>
         <br />
+        <li><h3><b><u>Details</u>:</b></h3></li>
         <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/guest.png"/>  {this.props.spot.number_of_guests} guests</li>
         <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bedroom.png"/>  {this.props.spot.number_of_bedroom} bedroom</li>
         <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506245769/spots/bed.png"/>  {this.props.spot.number_of_beds} bed</li>
         <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bathroom.png"/>  {this.props.spot.number_of_bathroom} bathroom</li>
-        <br />
         <br />
         <h3><u>Description</u></h3>
         <li>{this.props.spot.description}</li>

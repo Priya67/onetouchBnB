@@ -37,11 +37,12 @@ export const fetchSpot = id => dispatch => (
   ))
 );
 
-export const fetchUser = id => dispatch => (
-  SpotApiUtil.fetchUser(id).then(user => (
+export const fetchUser = id => dispatch => {
+  console.log("fetchUser id", id);
+  return SpotApiUtil.fetchUser(id).then(user => (
     dispatch(receiveUser(user))
-  ))
-);
+  ));
+};
 
 export const createReview = review => dispatch => (
   SpotApiUtil.createReview(review).then(review => (

@@ -11,7 +11,6 @@ class SpotIndexItem extends React.Component {
   }
 
   handleClick() {
-    // console.log(this.);
     const spotId = this.props.spot.id;
     this.props.history.push(`/spots/${spotId}`);
   }
@@ -19,10 +18,10 @@ class SpotIndexItem extends React.Component {
   rating(length) {
     let r = [];
     for(let i = 0; i<length; i++) {
-      r.push(<b>{String.fromCharCode(9733)}</b>);
+      r.push(<b key={i}>{String.fromCharCode(9733)}</b>);
     }
     for(let j = 0; j<5-length;j++) {
-      r.push(<b>{String.fromCharCode(9734)}</b>);
+      r.push(<b key={5-j}>{String.fromCharCode(9734)}</b>);
     }
     return r;
   }
