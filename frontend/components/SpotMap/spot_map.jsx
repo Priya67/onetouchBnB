@@ -8,7 +8,7 @@ const mapOptions = {
     lat: 37.773972,
     lng: -122.431297
   },
-  zoom: 10
+  zoom: 100
 };
 
 class SpotMap extends React.Component {
