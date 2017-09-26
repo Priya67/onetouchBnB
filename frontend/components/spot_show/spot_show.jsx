@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import ReviewFormContainer from './review_form_container';
 import SpotDetail from './spot_detail';
+import { ProtectedRoute } from '../../util/route_util';
+import { ReviewLink } from '../../util/link_util';
 
 const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser }) => {
 
@@ -13,6 +15,15 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser }) => {
           <SpotDetail spot={spot}
             user={user}
             fetchUser={fetchUser} />
+            <ReviewLink
+            component={ReviewFormContainer}
+            to={`/spots/${spotId}/review`}
+            label="Leave a Review"
+          />
+          <ProtectedRoute
+            path="/spots/:spotId/review"
+            component={ReviewFormContainer}
+          />
         </div>
     </div>
   );

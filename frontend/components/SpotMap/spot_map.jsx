@@ -48,7 +48,7 @@ class SpotMap extends React.Component {
     });
   }
 
-  handleMarkerClick(bench) {
+  handleMarkerClick(spot) {
     this.props.history.push(`spot/${spot.id}`);
   }
 

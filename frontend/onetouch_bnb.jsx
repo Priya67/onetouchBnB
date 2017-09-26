@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import { login, logout, signup } from './util/session_api_util';
-import { fetchSpots, fetchSpot, fetchUser } from './actions/spot_actions';
+import { fetchSpots, fetchSpot, fetchUser, createReview } from './actions/spot_actions';
 import configureStore from './store/store';
 import Root from './components/root';
 
@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.fetchSpots = fetchSpots;
   window.fetchSpot = fetchSpot;
   window.fetchUser = fetchUser;
+  window.createReview = createReview;
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
 });
