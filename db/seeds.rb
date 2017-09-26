@@ -221,3 +221,37 @@ house8 = Spot.create!(
   lng: -122.397222,
   city: 'San Francisco, CA'
 );
+
+review1 = Review.create!(
+  body: 'Loved it',
+  rating: 5,
+  spot_id: house1.id
+);
+
+review2 = Review.create!(
+  body: 'Like dit very much',
+  rating: 4,
+  spot_id: house2.id
+);
+
+review3 = Review.create!(
+  body: 'Had an awesome stay',
+  rating: 4.2,
+  spot_id: house3.id
+);
+
+review4 = Review.create!(
+  body: 'Good for vacation',
+  rating: 3,
+  spot_id: house4.id
+);
+review5 = Review.create!(
+  body: 'Must visit',
+  rating: 4,
+  spot_id: house5.id
+);
+review6 = Review.create!(
+  body: 'Will come again',
+  rating: 5,
+  spot_id: house6.id
+);
