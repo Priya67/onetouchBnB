@@ -16,7 +16,7 @@ demo = User.create!(
   password:'password',
   email:'prettyuser@gmail.com',
   phone_number:'1234567890',
-  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506418306/bgs/user/user3.png'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506420041/users/u4.png'
 )
 
 priyanka = User.create!(
@@ -26,7 +26,7 @@ priyanka = User.create!(
   password:'password',
   email:'priyanka@gmail.com',
   phone_number:'2345678901',
-  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214890/users/priyanka.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506420041/users/u3.jpg'
 )
 
 selena = User.create!(
@@ -36,7 +36,7 @@ selena = User.create!(
   password:'password',
   email:'selena@gmail.com',
   phone_number:'3456789012',
-  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214593/users/selena.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506420041/users/u2.jpg'
 )
 
 taylor = User.create!(
@@ -46,7 +46,7 @@ taylor = User.create!(
   password:'password',
   email:'taylor@gmail.com',
   phone_number:'4567890123',
-  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214592/users/taylor.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506420041/users/u1.jpg'
 )
 
 justin = User.create!(
@@ -56,7 +56,7 @@ justin = User.create!(
   password:'password',
   email:'justin@gmail.com',
   phone_number:'5678901234',
-  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506214592/users/justin.jpg'
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506418307/bgs/user/user.png'
 )
 
 house1 = Spot.create!(
