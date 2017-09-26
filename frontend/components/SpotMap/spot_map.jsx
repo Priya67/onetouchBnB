@@ -17,6 +17,7 @@ class SpotMap extends React.Component {
   }
 
   componentDidMount() {
+    console.log("I am here");
     this.makeMap();
   }
 
