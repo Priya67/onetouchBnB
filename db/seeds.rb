@@ -8,6 +8,7 @@
 
 User.destroy_all
 Spot.destroy_all
+Review.destroy_all
 
 demo = User.create!(
   username:'User',
@@ -102,7 +103,7 @@ house2 = Spot.create!(
 )
 
 house3 = Spot.create!(
-  headline:'Sharing spot in SF',
+  headline:'Clean comfortable sharing spot',
   description:'Shared spot available in a big room in Soma Square Apartments located in the heart of SF.This a large room in a modern apartment in Bedford-Stuyvesant where I live with my partner. You will enjoy private use of the room as well as access to everything you see in the photos (kitchen, living room, etc). Please note that you may be sharing the common areas with other guests.',
   location:'Soma Square Apartments',
   img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506407113/spots/new9_gc61x7.jpg',
@@ -122,7 +123,7 @@ house3 = Spot.create!(
 )
 
 house4 = Spot.create!(
-  headline:'Room in 2Br /2Ba',
+  headline:'Room in 2Br /2Ba house',
   description:'If you just want a cheap place to sleep, but you need a clean and convenience place, this will be the right choice for you. 3 mins walk to subway, 45 mins to Manhattan . 10 mins walk to Queens mall, Macy\'s, JCPpenny, Best Buy',
   location:'392 Sip Avenue, Jersey City, New Jersey',
   img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506407112/spots/new7_vvczgw.jpg',
