@@ -22,18 +22,26 @@ ActiveRecord::Schema.define(version: 20170922225305) do
     t.string "img_url"
     t.integer "rating", null: false
     t.string "number_of_beds", null: false
+    t.integer "number_of_guests", null: false
+    t.integer "number_of_bedroom", null: false
+    t.integer "number_of_bathroom", null: false
     t.integer "user_id", null: false
     t.integer "price", null: false
     t.string "room_type", null: false
     t.string "cancellations", null: false
     t.string "house_rules"
     t.string "reviews"
+    t.float "lat", null: false
+    t.float "lng", null: false
+    t.string "city", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username", null: false
+    t.string "fname", null: false
+    t.string "lname", null: false
     t.string "password_digest", null: false
     t.string "session_token", null: false
     t.string "email", null: false

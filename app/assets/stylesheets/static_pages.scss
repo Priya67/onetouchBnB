@@ -8,15 +8,26 @@ header {
   align-items: left;
   padding: 10px;
   border-bottom: 1px solid #888888;
+  background-image: url(https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506416549/bgs/bg2.jpg);
 }
 
+#slogan {
+  text-align: center;
+  font-size: 60px;
+  color: Purple;
+}
 // h1 {
 //   text-align: center;
 // }
 
+body {
+  font-family: 'Roboto Slab', serif;
+}
 .index-image {
   width: 95%;
-  height: 500px;
+  height: 750px;
+  border-radius: 3px;
+
 }
 
 #head {
@@ -32,8 +43,8 @@ h3 {
 }
 
 .spots_img {
-  height: 320px;
-  width: 320px;
+  height: 400px;
+  width: 450px;
   border: 1px solid black;
   border-radius: 3px;
 }
@@ -64,9 +75,16 @@ h3 {
   justify-content: space-between;
 }
 
+#user-pic-home img {
+  border-radius: 30px;
+  height: 70px;
+  width: 70px;
+}
+
 #user-pic img {
   border-radius: 30px;
-
+  height: 45px;
+  width: 45px;
 }
 
 #search {

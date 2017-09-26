@@ -30,14 +30,20 @@ render(){
         <img className="index-image" src={this.props.spot.img_url} />
         <li id="head"><h1>{this.props.spot.headline}</h1></li>
         <br />
-        <li><img src={this.props.user.img_url} /></li>
+        <li><h3><u>Owner</u>:  {this.props.user.fname}</h3></li>
+        <br/>
+        <li id="user-pic-home"><img src={this.props.user.img_url}/>   </li>
+        <br />
         <br />
         <li>{this.props.spot.room_type} Room </li>
         <li>{this.rating(this.props.spot.rating)}</li>
         <br/>
         <li><h3><b><u>Rental Price</u>:  {this.props.spot.price}$ </b></h3> </li>
         <br />
-        <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506245769/spots/bed.png"/>  {this.props.spot.number_of_beds}</li>
+        <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/guest.png"/>  {this.props.spot.number_of_guests} guests</li>
+        <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bedroom.png"/>  {this.props.spot.number_of_bedroom} bedroom</li>
+        <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506245769/spots/bed.png"/>  {this.props.spot.number_of_beds} bed</li>
+        <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bathroom.png"/>  {this.props.spot.number_of_bathroom} bathroom</li>
         <br />
         <br />
         <h3><u>Description</u></h3>
