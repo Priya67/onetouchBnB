@@ -78,7 +78,7 @@ house1 = Spot.create!(
   No parties',
   lat: 43.098432,
   lng: 76.244554,
-  city: 'Syracuse'
+  city: 'Syracuse, NY'
 );
 
 house2 = Spot.create!(
@@ -98,7 +98,7 @@ house2 = Spot.create!(
   house_rules:'Keep it clean and noise free and no other person allowed other than the guest',
   lat: 39.078145,
   lng: 94.557401,
-  city: 'Kansas'
+  city: 'Kansas, MO'
 )
 
 house3 = Spot.create!(
@@ -118,7 +118,7 @@ house3 = Spot.create!(
   house_rules:'None',
   lat: 37.783859,
   lng: -122.397759,
-  city: 'San Francisco'
+  city: 'San Francisco, CA'
 )
 
 house4 = Spot.create!(
@@ -138,7 +138,7 @@ house4 = Spot.create!(
   house_rules:'No pets allowed',
   lat: 40.734051,
   lng:  -74.078676,
-  city: 'Jersey City'
+  city: 'Jersey City, NJ'
 )
 
 house5 = Spot.create!(
@@ -158,7 +158,7 @@ house5 = Spot.create!(
   house_rules:'No cats allowed',
   lat: 37.333582,
   lng: -121.884579,
-  city: 'San Jose'
+  city: 'San Jose, CA'
 )
 
 house6 = Spot.create!(
@@ -178,7 +178,7 @@ house6 = Spot.create!(
   house_rules:'We wish for your pleasant stay.',
   lat: 37.784982,
   lng: -122.485845,
-  city: 'San Francisco'
+  city: 'San Francisco, CA'
 )
 
 house7 = Spot.create!(
@@ -199,7 +199,7 @@ house7 = Spot.create!(
   house_rules:'No pets allowed',
   lat: 37.801692,
   lng: -122.401067,
-  city: 'San Francisco'
+  city: 'San Francisco, CA'
 )
 
 house8 = Spot.create!(
@@ -219,5 +219,5 @@ house8 = Spot.create!(
   house_rules:'No parties',
   lat: 37.744419,
   lng: -122.397222,
-  city: 'San Francisco'
+  city: 'San Francisco, CA'
 );

@@ -28,11 +28,12 @@ render(){
     <div>
       <ul className="spot_list">
         <img className="index-image" src={this.props.spot.img_url} />
-        <li id="head"><h1>{this.props.spot.headline}</h1></li>
-        <br />
+        <div id="take-on-side">
+        <li id="head"><h1>{this.props.spot.headline} in {this.props.spot.city}</h1></li>
         <li><h3><u>Owner</u>:  {this.props.user.fname}</h3></li>
-        <br/>
-        <li id="user-pic-home"><img src={this.props.user.img_url}/>   </li>
+        <br />
+        <li id="user-pic-home"><img src={this.props.user.img_url}/></li>
+        </div>
         <br />
         <br />
         <li>{this.props.spot.room_type} Room </li>

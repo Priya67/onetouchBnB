@@ -40,6 +40,11 @@ header {
 body {
   font-family: 'Roboto Slab', serif;
   background-color: #F6FFCB;
+  font-size: 20px;
+}
+
+#price {
+  font-weight: bold;
 }
 .index-image {
   width: 95%;
@@ -151,6 +156,10 @@ div > button {
 div > p {
   margin-left: 5px;
   text-align: center;
+}
+
+div > li {
+  justify-content: space-around;
 }
 
 li {

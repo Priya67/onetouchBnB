@@ -35,7 +35,7 @@ class SpotIndexItem extends React.Component {
           onClick={this.handleClick}
         >
           <img src={this.props.spot.img_url} className="spots_img"/>
-          <p><b>${this.props.spot.price} </b>{this.props.spot.headline}<br />
+          <p id="price"> <b>${this.props.spot.price} </b>{this.props.spot.headline}<br />
           {this.rating(this.props.spot.rating)}</p>
           <br />
           <br />
