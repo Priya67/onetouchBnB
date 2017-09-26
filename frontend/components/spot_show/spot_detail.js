@@ -40,9 +40,10 @@ render(){
         <li>{this.props.spot.room_type} Room </li>
         <li>{this.rating(this.props.spot.rating)}</li>
         <br/>
-        <li><h3><b><u>Rental Price</u>:  {this.props.spot.price}$ </b></h3> </li>
+        <h3><b><u>Rental Price</u>: </b></h3>
+        <li>{this.props.spot.price}$ / night</li>
         <br />
-        <li><h3><b><u>Details</u>:</b></h3></li>
+        <h3><b><u>Details</u>:</b></h3>
         <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/guest.png"/>  {this.props.spot.number_of_guests} guests</li>
         <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bedroom.png"/>  {this.props.spot.number_of_bedroom} bedroom</li>
         <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506245769/spots/bed.png"/>  {this.props.spot.number_of_beds} bed</li>
