@@ -3,6 +3,7 @@ import * as SpotApiUtil from '../util/spot_api_util';
 export const RECEIVE_SPOTS = "RECEIVE_SPOTS";
 export const RECEIVE_SPOT = "RECEIVE_SPOT";
 export const RECEIVE_USER = "RECEIVE_USER";
+export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 
 export const receiveSpots = spots => ({
   type: RECEIVE_SPOTS,
@@ -17,6 +18,11 @@ export const receiveSpot = spot => ({
 export const receiveUser = user => ({
   type: RECEIVE_USER,
   user
+});
+
+export const receiveReview = review => ({
+  type: RECEIVE_REVIEW,
+  review
 });
 
 export const fetchSpots = () => dispatch => {
@@ -34,5 +40,11 @@ export const fetchSpot = id => dispatch => (
 export const fetchUser = id => dispatch => (
   SpotApiUtil.fetchUser(id).then(user => (
     dispatch(receiveUser(user))
+  ))
+);
+
+export const createReview = review => dispatch => (
+  SpotApiUtil.createReview(review).then(review => (
+    dispatch(receiveReview(review))
   ))
 );
