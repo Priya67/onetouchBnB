@@ -77,7 +77,6 @@ class SpotDetail extends React.Component {
           <br />
           <div className="reviews">
             <h3>Reviews</h3>
-            // {this.reviewList(this.props.spot.reviews)}
           </div>
         </ul>
       </div>
