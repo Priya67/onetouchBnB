@@ -77,7 +77,8 @@ h3 {
     // width: 350px;
     // background-color:#000;
     opacity:0.8;
-    -webkit-filter: brightness(100%);
+    box-shadow: 2px 1px 3px rgba(249, 157, 157, 0.2);
+    -webkit-animation: wiggle 0.1s ease-in-out 0.1s alternate 3;
     // border-radius:3px;
 }
 
@@ -197,7 +198,7 @@ li {
   display: flex;
 }
 
-#splash-inline p {
+#splash-inline div {
   margin-right: 10px;
 }
 //

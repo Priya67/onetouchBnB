@@ -53,8 +53,6 @@ class App extends React.Component {
             openSignIn={this.handleToggle('Sign In')}
             />
         </header>
-        <AuthRoute path="/login" component={SessionFormContainer} />
-        <AuthRoute path="/signup" component={SessionFormContainer} />
         <Route exact path="/spots/:spotId" component={SpotShowContainer} />
         <Route exact path="/" component={SpotIndexContainer} />
       </div>

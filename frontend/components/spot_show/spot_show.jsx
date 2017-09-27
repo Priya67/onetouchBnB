@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import ReviewFormContainer from './review_form_container';
 import SpotDetail from './spot_detail';
+import SpotMap from '../SpotMap/spot_map';
 import { ProtectedRoute } from '../../util/route_util';
 import { ReviewLink } from '../../util/link_util';
 
 const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser }) => {
-  // console.log("spot show ", spotId);
+  console.log("dfjnsdjkfn", spot.reviews);
+  const spots = {
+    [spotId]: spot
+  };
+
   return (
     <div>
         <Link to="/"><h3  className="single_spot_show">Back to homes</h3></Link>
@@ -16,16 +22,15 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser }) => {
             user={user}
             spotId={spotId}
             fetchSpot={fetchSpot}
-            fetchUser={fetchUser} />
-            <ReviewLink
-            component={ReviewFormContainer}
-            to={`/spots/${spotId}/review`}
-            label="Leave a Review"
+            fetchUser={fetchUser}
           />
-          <ProtectedRoute
-            path="/spots/:spotId/review"
-            component={ReviewFormContainer}
-          />
+
+        <SpotMap
+          spots={spots}
+          spotId={spotId}
+          singleSpot={true}
+          fetchSpot={fetchSpot}
+        />
         </div>
     </div>
   );

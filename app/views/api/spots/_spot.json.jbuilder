@@ -9,3 +9,7 @@ json.extract! spot, :id, :headline, :description,
 json.user do
   json.extract! spot.user, :id, :username, :img_url, :fname, :lname
 end
+
+json.user do
+  json.extract! spot.reviews, :id, :spot_id, :rating
+end
