@@ -8,8 +8,7 @@ header {
   align-items: left;
   padding: 10px;
   border-bottom: 1px solid #888888;
-  background-image: url(https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506418450/bgs/bg6.jpg);
-  border-radius: 40px;
+  box-shadow: 5px 5px 5px #888888;
 }
 
 #slogan {
@@ -19,7 +18,6 @@ header {
 }
 
 .header-name {
-  color: white;
   margin-top: 15px;
   font-size: 18px;
   margin-left: 10px;
@@ -39,7 +37,7 @@ header {
 
 body {
   font-family: 'Roboto Slab', serif;
-  background-color: #FFFAF0;
+  background-color: #FFFFFF;
   font-size: 20px;
 }
 
@@ -50,7 +48,10 @@ body {
   width: 100%;
   height: 750px;
   border-radius: 3px;
+}
 
+.spot-index-item p {
+  font-size: 15px;
 }
 
 #head {
@@ -66,20 +67,16 @@ h3 {
 }
 
 .spots_img {
-  height: 400px;
-  width: 450px;
+  height: 250px;
+  width: 300px;
   border: 1px solid black;
   border-radius: 3px;
 }
 
 .spots_img:hover {
-    // height: 350px;
-    // width: 350px;
-    // background-color:#000;
     opacity:0.8;
     box-shadow: 2px 1px 3px rgba(249, 157, 157, 0.2);
     -webkit-animation: wiggle 0.1s ease-in-out 0.1s alternate 3;
-    // border-radius:3px;
 }
 
 
@@ -92,7 +89,6 @@ h3 {
      font: inherit;
      cursor: pointer;
      vertical-align: middle;
-  color: white;
   margin-top: 14px;;
   vertical-align: baseline;
   padding-right: 10px;
@@ -190,15 +186,16 @@ li {
 }
 
 #map {
-  height: 100%;
+  height: 1000px;
   width: 500px;
+  position: relative;
 }
 
-#splash-inline {
+#splash-inline, #mapdiv {
   display: flex;
+  height: 100%;
 }
-
-#splash-inline div {
+ #splash-inline div{
   margin-right: 10px;
 }
 //

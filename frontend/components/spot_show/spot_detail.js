@@ -10,6 +10,7 @@ class SpotDetail extends React.Component {
   }
 
   componentDidMount(){
+    console.log(this.props.spotId);
     // this.props.fetchUser(this.props.spot.user_id);
     this.props.fetchSpot(this.props.spotId);
   }

@@ -13,8 +13,7 @@ class SpotIndex extends React.Component {
   render() {
     return (
       <div>
-        <h1 id="slogan">House Rental Center</h1>
-        <h1><u>Homes</u></h1>
+        <h3><u>Homes</u></h3>
         <div id="splash-inline">
           <ul>
             {
@@ -26,7 +25,7 @@ class SpotIndex extends React.Component {
               ))
             }
           </ul>
-          <div>
+          <div id="mapdiv">
             <SpotMap />
           </div>
         </div>
