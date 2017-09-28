@@ -57,7 +57,7 @@ class ReviewForm extends React.Component {
           <br/>
           <input type="submit" />
         </form>
-        <button onClick={this.navigateToSpotShow}>Cancel</button>
+        <button id="review-button" onClick={this.navigateToSpotShow}>Cancel</button>
       </div>
     );
  }

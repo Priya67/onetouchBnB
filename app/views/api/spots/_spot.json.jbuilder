@@ -10,6 +10,8 @@ json.user do
   json.extract! spot.user, :id, :username, :img_url, :fname, :lname
 end
 
-# json.user do
-#   json.extract! spot.reviews, :id, :spot_id, :rating
-# end
+json.reviews do
+  json.array! spot.reviews do |review|
+    json.extract! review, :id, :spot_id, :rating, :body
+  end
+end

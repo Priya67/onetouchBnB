@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
-
 import ReviewShow from './review_show';
-import DatePicker from 'react-datepicker';
+import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
 import moment from 'moment';
+
 
 class SpotDetail extends React.Component {
   constructor(props) {
@@ -19,16 +19,18 @@ class SpotDetail extends React.Component {
     this.props.fetchSpot(this.props.spotId);
   }
 
-  reviewList(reviews) {
-    console.log("reviews", reviews);
-    // reviews.map(
-    //   review => (
-    //     <ReviewShow
-    //       rating={review.rating}
-    //       body={review.body}
-    //       key={review.id}
-    //       />
-    //   ));
+  reviewList() {
+    if(this.props.spot && this.props.spot.reviews) {
+      return (
+        this.props.spot.reviews.map(
+          review => (
+            <ReviewShow
+              rating={review.rating}
+              body={review.body}
+              key={review.id}
+              />
+          )));
+        }
     }
 
   rating(length) {
@@ -94,26 +96,21 @@ class SpotDetail extends React.Component {
           <br />
           <div className="reviews">
             <h3><u>Reviews</u></h3>
-            {this.reviewList(this.props.spot.reviews)}
+            {this.reviewList()}
           </div>
-            <DatePicker
-              selected={this.state.startDate}
-              selectsStart
+          <div id="nostyle">
+            <DateRangePicker
               startDate={this.state.startDate}
               endDate={this.state.endDate}
-              onChange={this.handleChangeStart}
-            />
+              onDatesChange={({ startDate, endDate }) => this.setState({ startDate, endDate })}
+              onFocusChange={() => console.log("Focus changes")}
+              />
 
-            <DatePicker
-              selected={this.state.endDate}
-              selectsEnd
-              startDate={this.state.startDate}
-              endDate={this.state.endDate}
-              onChange={this.handleChangeEnd}
-            />
+          </div>
+
 
           <h3>Booking Details</h3>
-          
+
         </ul>
       </div>
     );
