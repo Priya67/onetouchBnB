@@ -20,7 +20,7 @@ end
 # end
 
 def user_params
-  params.require(:user).permit(:username, :password, :email, :phone_number, :img_url)
+  params.require(:user).permit(:username, :fname, :lname, :password, :email, :phone_number, :img_url)
 end
 
 end
