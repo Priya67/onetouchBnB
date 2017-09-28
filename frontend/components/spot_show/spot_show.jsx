@@ -14,8 +14,8 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser }) => {
   };
 
   return (
-    <div>
-        <Link to="/"><h3  className="single_spot_show">Back to homes</h3></Link>
+    <div className="single_spot_show">
+        <Link to="/"><h3>Back to homes</h3></Link>
         <br />
         <div className="spot-show">
           <SpotDetail spot={spot}

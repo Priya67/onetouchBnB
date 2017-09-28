@@ -77,7 +77,7 @@ class SpotDetail extends React.Component {
           <li>{this.props.spot.cancellations}</li>
           <br />
           <div className="reviews">
-            <h3>Reviews</h3>
+            <h3><u>Reviews</u></h3>
           </div>
         </ul>
       </div>

@@ -185,10 +185,19 @@ li {
   cursor: pointer;
 }
 
-#map {
+#splash-inline div #map {
   height: 1000px;
   width: 500px;
   position: relative;
+}
+
+#map {
+  height: 500px;
+}
+
+.single_spot_show:nth-child(odd) {
+  width: 100%;
+  height: 400px;
 }
 
 #splash-inline, #mapdiv {
