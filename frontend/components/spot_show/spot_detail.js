@@ -44,7 +44,7 @@ class SpotDetail extends React.Component {
     return (
       <div>
         <ul className="spot_list">
-          <img className="index-image" src={this.props.spot.img_url} />
+          <img className="index-image" align="middle" src={this.props.spot.img_url} />
           <div id="take-on-side">
           <li id="head"><h1>{this.props.spot.headline} in {this.props.spot.city}</h1></li>
           <li><h3><u>Owner</u>:  {this.props.user.fname}, {this.props.user.lname}</h3></li>

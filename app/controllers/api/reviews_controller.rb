@@ -1,6 +1,10 @@
 class Api::ReviewsController < ApplicationController
   before_action :require_logged_in
 
+  def index
+    @reviews = Review.find(spot_id: params[:spot_id])
+  end
+
   def create
     @review = Review.new(review_params)
 

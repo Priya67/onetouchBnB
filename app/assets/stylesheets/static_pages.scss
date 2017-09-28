@@ -8,7 +8,7 @@ header {
   align-items: left;
   padding: 10px;
   border-bottom: 1px solid #888888;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 2px 5px #888888;
 }
 
 #slogan {
@@ -123,7 +123,7 @@ h3 {
 #logo {
   margin-top: 10px;
   height: 50px;
-  width: 60px;
+  width: 45px;
   vertical-align: baseline;
 }
 
@@ -151,7 +151,6 @@ div > button {
 
 
 div > p {
-  margin-left: 5px;
   text-align: center;
 }
 
@@ -165,10 +164,6 @@ li {
   padding-right: 20px;
 }
 
-// ul li:nth-child(n+7) {
-//   display: none;
-// }
-
 #bed {
   height: 17px;
   width: 17px;
@@ -178,12 +173,12 @@ li {
   vertical-align: bottom;
 }
 
-#showmore {
-  width: 20%;
-  margin:auto;
-  display: block;
-  cursor: pointer;
-}
+// #showmore {
+//   width: 20%;
+//   margin:auto;
+//   display: block;
+//   cursor: pointer;
+// }
 
 #splash-inline div #map {
   height: 1000px;
@@ -193,6 +188,7 @@ li {
 
 #map {
   height: 500px;
+  width: 100%;
 }
 
 .single_spot_show:nth-child(odd) {
@@ -202,12 +198,24 @@ li {
 
 #splash-inline, #mapdiv {
   display: flex;
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
  #splash-inline div{
-  margin-right: 10px;
+  margin-right: 5px;
+  width: 100%;
+  height: auto;
+}
+
+#splash-inline {
+  width: 100%;
+  height: auto;
 }
 //
 // #splash-inline ul {
 //   width: 50%;
 // }
+ul {
+    padding: 0;
+    list-style-type: none;
+}

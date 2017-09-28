@@ -46,7 +46,7 @@ class App extends React.Component {
         </Modal>
         <header>
           <Link to="/" className="header-link">
-            <img src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506577449/airlogo_c0umvy.jpg" alt="Logo" id="logo" />
+            <img src="http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506582675/images_evrzcv.png" alt="Logo" id="logo" />
           </Link>
           <input type="text" name="search" id="search" placeholder="Search.."/>
           <GreetingContainer openSignUp={this.handleToggle('Sign Up')}
