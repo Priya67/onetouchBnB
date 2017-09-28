@@ -20,17 +20,18 @@ export const fetchUser = id => (
   })
 );
 
-export const createReview = data => (
+export const createReview = review => (
   $.ajax({
     method: 'POST',
     url: 'api/reviews',
-    data
+    data: review
   })
 );
 
-export const fetchReviews = () => (
+export const fetchReviews = spot_id => (
   $.ajax({
     method: 'GET',
-    url: 'api/reviews'
+    url: 'api/reviews',
+    data: {spot_id}
   })
 );

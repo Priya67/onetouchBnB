@@ -7,6 +7,7 @@ import { AuthRoute } from '../util/route_util';
 import Modal from 'react-modal';
 import SpotIndexContainer from './spot_index/spot_index_container';
 import SpotShowContainer from './spot_show/spot_show_container';
+import ReviewFormContainer from './spot_show/review_form_container';
 
 const customStyles = {
   content : {
@@ -55,6 +56,7 @@ class App extends React.Component {
         </header>
         <Route exact path="/spots/:spotId" component={SpotShowContainer} />
         <Route exact path="/" component={SpotIndexContainer} />
+        <Route exact path="/spots/:spotId/review" component={ReviewFormContainer}/>
       </div>
     );
   }

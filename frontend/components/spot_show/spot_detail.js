@@ -10,21 +10,19 @@ class SpotDetail extends React.Component {
   }
 
   componentDidMount(){
-    console.log(this.props.spotId);
-    // this.props.fetchUser(this.props.spot.user_id);
     this.props.fetchSpot(this.props.spotId);
   }
 
   reviewList(reviews) {
     console.log("reviews", reviews);
-    reviews.map(
-      review => (
-        <ReviewShow
-          rating={review.rating}
-          body={review.body}
-          key={review.id}
-          />
-      ));
+    // reviews.map(
+    //   review => (
+    //     <ReviewShow
+    //       rating={review.rating}
+    //       body={review.body}
+    //       key={review.id}
+    //       />
+    //   ));
     }
 
   rating(length) {
@@ -44,7 +42,7 @@ class SpotDetail extends React.Component {
     return (
       <div>
         <ul className="spot_list">
-          <img className="index-image" align="middle" src={this.props.spot.img_url} />
+          <img className="index-image" src={this.props.spot.img_url} />
           <div id="take-on-side">
           <li id="head"><h1>{this.props.spot.headline} in {this.props.spot.city}</h1></li>
           <li><h3><u>Owner</u>:  {this.props.user.fname}, {this.props.user.lname}</h3></li>
@@ -78,6 +76,7 @@ class SpotDetail extends React.Component {
           <br />
           <div className="reviews">
             <h3><u>Reviews</u></h3>
+            {this.reviewList(this.props.spot.reviews)}
           </div>
         </ul>
       </div>

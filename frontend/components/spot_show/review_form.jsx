@@ -32,6 +32,7 @@ class ReviewForm extends React.Component {
   }
 
   render() {
+    console.log("I am in review");
     return (
       <div className="review-form">
         <form onSubmit={this.handleSubmit}>

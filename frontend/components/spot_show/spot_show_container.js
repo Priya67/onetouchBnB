@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { fetchSpot, fetchUser } from '../../actions/spot_actions';
+import { fetchSpot, fetchUser, createReview } from '../../actions/spot_actions';
 import { selectSpot } from '../../reducers/selectors';
 import SpotShow from './spot_show';
 
