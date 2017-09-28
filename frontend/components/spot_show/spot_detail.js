@@ -2,11 +2,17 @@ import React from 'react';
 import { Link } from 'react-router';
 
 import ReviewShow from './review_show';
+import DatePicker from 'react-datepicker';
+import moment from 'moment';
 
 class SpotDetail extends React.Component {
   constructor(props) {
     super(props);
     this.rating = this.rating.bind(this);
+    this.state={
+      startDate: moment(),
+      endDate: moment()
+    };
   }
 
   componentDidMount(){
@@ -34,6 +40,18 @@ class SpotDetail extends React.Component {
       r.push(<b key={5-j}>{String.fromCharCode(9734)}</b>);
     }
     return r;
+  }
+
+  handleChangeEnd(date) {
+    this.setState({
+      startDate: date
+    });
+  }
+
+  handleChangeStart(date) {
+    this.setState({
+      endDate: date
+    });
   }
 
 
@@ -78,6 +96,24 @@ class SpotDetail extends React.Component {
             <h3><u>Reviews</u></h3>
             {this.reviewList(this.props.spot.reviews)}
           </div>
+            <DatePicker
+              selected={this.state.startDate}
+              selectsStart
+              startDate={this.state.startDate}
+              endDate={this.state.endDate}
+              onChange={this.handleChangeStart}
+            />
+
+            <DatePicker
+              selected={this.state.endDate}
+              selectsEnd
+              startDate={this.state.startDate}
+              endDate={this.state.endDate}
+              onChange={this.handleChangeEnd}
+            />
+
+          <h3>Booking Details</h3>
+          
         </ul>
       </div>
     );

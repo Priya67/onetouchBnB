@@ -39,7 +39,7 @@ class ReviewForm extends React.Component {
           <label>Rating: </label>
           <br/>
           <input
-            type="number"
+            type="text"
             value={this.state.rating}
             onChange={this.update("rating")}
           />
