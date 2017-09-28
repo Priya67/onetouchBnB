@@ -2,30 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  padding: 10px;
-  border-bottom: 1px solid #888888;
-  box-shadow: 5px 2px 5px #888888;
-}
 
-
-.header-name {
-  margin-top: 15px;
-  font-size: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.header-button {
-  background-color: white;
-  font-weight: bold;
-  width: 80px;
-  font-size: 14px;
-  height: 28px;
-}
 // h1 {
 //   text-align: center;
 // }
@@ -34,6 +11,7 @@ body {
   font-family: 'Roboto Slab', serif;
   background-color: #FFFFFF;
   font-size: 20px;
+  height: auto;
 }
 
 #price {
@@ -75,25 +53,7 @@ h3 {
 }
 
 
-.login-signup button {
-  margin-left: 10px;
-     background:none;
-     color:inherit;
-     border:none;
-     padding:0;
-     font: inherit;
-     cursor: pointer;
-     vertical-align: middle;
-  margin-top: 14px;
-  vertical-align: baseline;
-  padding-right: 10px;
-  font-size: 20px;
-}
 
-#user-pic {
-  display: flex;
-  justify-content: space-between;
-}
 
 #user-pic-home img {
   border-radius: 30px;
@@ -101,48 +61,15 @@ h3 {
   width: 70px;
 }
 
-#user-pic img {
-  border-radius: 30px;
-  height: 45px;
-  width: 45px;
-}
 
-#search {
-  width: 300px;
-  height: 30px;
-  margin: auto;
-  box-shadow: 2px 2px 2px #888888;
-  vertical-align: middle;
-}
 
-#logo {
-  margin-top: 10px;
-  height: 50px;
-  width: 45px;
-  vertical-align: baseline;
-}
 
-.login-input[type=text], .login-input[type=password], .signup-input[type=text] {
-  width: 100%;
-  height: 30px;
-  margin-top: 10px;
-}
 
-.login-input[type=text]:focus, .login-input[type=password]:focus, .signup-input[type=text]:focus {
-  background-color: yellow;
-}
-
-img {
-  height: 30px;
-  width: 30px;
-}
-
-div > button :not(#review-button){
-  width: 100%;
-  height: 40px;
-  margin-top: 10px;
-  background-color: #FF5A5F;
-}
+//
+// img {
+//   height: 30px;
+//   width: 30px;
+// }
 
 
 div > p {
@@ -184,32 +111,32 @@ li {
 #map {
   height: 500px;
   width: 100%;
+  position: absolute;
+  overflow: hidden;
 }
 
-#nostyle {
-  style: none;
-}
 
-.single_spot_show:first-child {
-  width: 100%;
-  height: 400px;
-}
+// .single_spot_show:first-child {
+//   width: 100%;
+//   height: 400px;
+// }
 
-#splash-inline, #mapdiv {
-  display: flex;
-  height: auto;
-  width: 100%;
-}
- #splash-inline div{
-  margin-right: 5px;
-  width: 100%;
-  height: auto;
-}
+// #splash-inline{
+//   display: flex;
+//   height: auto;
+//   width: 100%;
+// }
 
-#splash-inline {
-  width: 100%;
-  height: auto;
-}
+ // #splash-inline div{
+ //  margin-right: 5px;
+ //  width: 100%;
+ //  height: auto;
+// }
+
+// #splash-inline {
+//   width: 100%;
+//   height: auto;
+// }
 //
 // #splash-inline ul {
 //   width: 50%;

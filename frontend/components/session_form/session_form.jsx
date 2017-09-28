@@ -130,12 +130,14 @@ class SessionForm extends React.Component {
         </label>
         <br/>
         <br/>
-        <Dropzone
-          multiple={false}
-          accept="image/*"
-          onDrop={this.onImageDrop.bind(this)}>
-          <p>select a file to upload.</p>
-        </Dropzone>
+        <div id="select-image">
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.onImageDrop.bind(this)}>
+            <p>select a file to upload.</p>
+          </Dropzone>
+        </div>
       </div>
     );
   }
@@ -190,7 +192,7 @@ class SessionForm extends React.Component {
           </div>
         </form>
         <br />
-        { this.props.modalType==='Sign Up' ? "" : <div><p>OR</p><button onClick={this.changedemo} >demo login</button></div> }
+        { this.props.modalType==='Sign Up' ? "" : <div><br /><button onClick={this.changedemo} >demo login</button></div> }
       </div>
     );
   }
