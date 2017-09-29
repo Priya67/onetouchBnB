@@ -35,14 +35,11 @@ class SpotMap extends React.Component {
     console.log("spot_map_WillMount2: ", this.props.spots);
   }
 
-  loadMap() {
+
+  componentDidMount() {
     console.log("spot_map_DidMount: ", this.props.spots);
     const map = this.refs.map;
     this.map = new google.maps.Map(this.mapNode, mapOptions);
-    if ( this.props.location.state )
-    {
-      this.map.fitBounds(this.props.location.state);
-    }
     this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
     if (this.props.singleSpot) {
       this.props.fetchSpot(this.props.spotId);
@@ -52,23 +49,43 @@ class SpotMap extends React.Component {
       console.log("spot_map_DidMount2: ", this.props.spots);
     }
   }
-
-  componentDidMount() {
-    this.loadMap();
-  }
+  // loadMap() {
+  //   console.log("spot_map_DidMount: ", this.props.spots);
+  //   const map = this.refs.map;
+  //   this.map = new google.maps.Map(this.mapNode, mapOptions);
+  //   if ( this.props.location.state )
+  //   {
+  //     this.map.fitBounds(this.props.location.state);
+  //   }
+  //   this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
+  //   if (this.props.singleSpot) {
+  //     this.props.fetchSpot(this.props.spotId);
+  //   } else {
+  //     this.registerListeners();
+  //     this.MarkerManager.updateMarkers(this.props.spots);
+  //     console.log("spot_map_DidMount2: ", this.props.spots);
+  //   }
+  // }
+  //
+  // componentDidMount() {
+  //   this.loadMap();
+  // }
 
   componentDidUpdate() {
     console.log("Update marker");
-    if (!this.props.singleSpot) {
+    if (this.props.singleSpot) {
+      const targetSpotKey = Object.keys(this.props.spots)[0];
+      const targetSpot = this.props.spots[targetSpotKey];
+      this.MarkerManager.updateMarkers([targetSpot]);
+    } else {
       this.MarkerManager.updateMarkers(this.props.spots);
     }
-    console.log("Update marker2");
   }
 
 
-  componentWillUnmount(){
-    delete this.map;
-  }
+  // componentWillUnmount(){
+  //   delete this.map;
+  // }
 
   registerListeners() {
     google.maps.event.addListener(this.map, 'idle', () => {

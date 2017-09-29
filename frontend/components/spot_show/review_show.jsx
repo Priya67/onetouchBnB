@@ -4,10 +4,10 @@ const Review = ({rating, body, author}) => (
   <div id="single-review">
     <ul>
       <li id="author_rating">
-        <li id="author">
+        <span id="author">
           <img src={author.img_url}/>
           <p>{author.username}</p>
-        </li>
+        </span>
         <li><u>Rating</u>: {ratingDisplay(rating)}</li>
       </li>
       <li><u>Comment</u>: {body}</li>

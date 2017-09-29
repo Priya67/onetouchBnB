@@ -37,6 +37,7 @@ class ReviewForm extends React.Component {
     console.log("I am in review");
     return (
       <div className="review-form">
+        <h1>Write a Review</h1>
         <form onSubmit={this.handleSubmit}>
           <label>Rating: </label>
           <br/>
@@ -45,6 +46,7 @@ class ReviewForm extends React.Component {
             value={this.state.rating}
             onChange={this.update("rating")}
           />
+          <br/>
           <br/>
 
           <label>Comment</label>
@@ -57,8 +59,10 @@ class ReviewForm extends React.Component {
             onChange={this.update("body")}
           />
           <br/>
-          <input type="submit" />
+          <br/>
+          <input type="submit" id="submit-button-on-review" />
         </form>
+          <br />
         <button id="review-button" onClick={this.navigateToSpotShow}>Cancel</button>
       </div>
     );
