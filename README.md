@@ -3,14 +3,18 @@
 
 <p align="center"><img width=60% src="https://github.com/Priya67/onetouchBnB/blob/master/public/name.png"></p>
 <p align="center">Now book the spot you like in San Francisco with OneTouch</p>
-<p> </p>
+
+<br>
+<br>
+
 <p>This super easy to use web app can be used to book houses across San Francisco city in California, USA. Developed with an aim to provide interactive and self navigating features for a user.</p>
 
-<p> </p>
-
+<br>
 ## This link will take you for a tour of OneTouchBnB in San Francisco.
 
 ![https://onetouchbnb.herokuapp.com](https://onetouchbnb.herokuapp.com)
+
+<br>
 
 ## Steps to setup OneTouchBnB app on your System
 * Download this project
@@ -30,20 +34,30 @@
 
 * You should be able to see OneTouchBnB in the browser
 
+<br>
+
 ## Tour of OneTouchBnB
 
 - Splash Page
 
 <p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/splash.png"> </p>
 
+<br>
+
 - Log In Modal
 
 <p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/signin.png"></p>
+
+<br>
 
 - Sign Up Modal
 
 <p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/signup.png"></p>
 
+<br>
+
 - After the user is logged in, it will look something like this
 
 <p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/logged_in_splash.png"></p>
+
+<br>
