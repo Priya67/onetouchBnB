@@ -8,11 +8,11 @@
 
 ## This link will take you for a tour of OneTouchBnB in San Francisco.
 
-[![https://onetouchbnb.herokuapp.com](https://onetouchbnb.herokuapp.com)]
+![https://onetouchbnb.herokuapp.com](https://onetouchbnb.herokuapp.com)
 
 ## Steps to setup OneTouchBnB app on your System
 * Download this project
-  * $ git clone https://github.com/Priya67/onetouchBnB
+  * ** $ git clone https://github.com/Priya67/onetouchBnB **
 
 * Install all dependencies
   * npm install
