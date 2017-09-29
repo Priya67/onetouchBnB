@@ -3,15 +3,19 @@ import { Link } from 'react-router';
 import ReviewShow from './review_show';
 import { DatePicker, SingleDatePicker} from 'react-dates';
 import moment from 'moment';
+import ReactConfirmAlert, { confirmAlert } from 'react-confirm-alert'; // Import
 
 class SpotDetail extends React.Component {
   constructor(props) {
     super(props);
     this.rating = this.rating.bind(this);
     this.state={
-      startDate: moment(),
-      endDate: moment()
+      startDate:'',
+      endDate: '',
+      booked: false
     };
+    this.confirmBooking = this.confirmBooking.bind(this);
+    this.check = this.check.bind(this);
   }
 
   componentDidMount(){
@@ -43,23 +47,38 @@ class SpotDetail extends React.Component {
     return r;
   }
 
-  handleChangeEnd(date) {
-    console.log("date1");
-    this.setState({
-      startDate: date
+  handleChangeStart() {
+    return e => this.setState({
+      startDate:e.currentTarget.value
     });
   }
 
-  handleChangeStart(date) {
-    console.log("date2", date);
-    this.setState({
-      endDate: date
+  handleChangeEnd() {
+    return e => this.setState({
+      endDate:e.currentTarget.value
     });
   }
 
+  confirmBooking() {
+    return (
+      <div>
+        <h4>Booking Confirmed</h4>
+        <br />
+        <p>From: </p>
+        <p>{this.state.startDate}</p>
+        <br />
+        <p>To: </p>
+        <p>{this.state.endDate}</p>
+      </div>
+    );
+  }
+
+  check(e) {
+    e.preventDefault();
+    this.props.currentUser ? this.setState({booked: true}) : alert('Please log in to book this place');
+  }
 
   render(){
-    console.log("props", Object.values(this.props.spot));
     return (
       <div>
         <img className="index-image" src={this.props.spot.img_url} />
@@ -101,25 +120,35 @@ class SpotDetail extends React.Component {
                     </div>
                   </div>
                   <div id="booking-window">
-                    <h3>Booking Details</h3>
+                    <h3>Book this spot</h3>
                     <form>
-                      <label for="cat_rental_request_start_date">Check In</label>
+                      <label>Check In:  </label>
+                      <br />
                       <input
+                        id="checking-dates"
                         type="date"
-                        name="cat_rental_request[start_date]"
-                        value="<%= @rental_request.start_date %>"
-                        id="cat_rental_request_start_date" />
+                        name="startDate"
+                        value={this.state.startDate}
+                        onChange={this.handleChangeStart()}
+                         />
                       <br />
 
-                          <label for="cat_rental_request_end_date">Check Out</label>
-                          <input
-                            type="date"
-                            name="cat_rental_request[end_date]"
-                            value="<%= @rental_request.end_date %>"
-                            id="cat_rental_request_end_date" />
+                          <label>Check Out:  </label>
                           <br />
-                          <input type="submit" />
+                          <input
+                            id="checking-dates"
+                            type="date"
+                            name="endDate"
+                            value={this.state.endDate}
+                            onChange={this.handleChangeEnd()}
+                            />
+                          <br />
+                          <input type="submit" id="book-button" value="Book" onClick={this.check}/>
                     </form>
+                    <div>{this.state.booked ? this.confirmBooking() : ''}</div>
+                    <div>
+                    </div>
+
                   </div>
             </div>
 

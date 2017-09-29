@@ -7,7 +7,7 @@ import SpotMap from '../SpotMap/spot_map';
 import { ProtectedRoute } from '../../util/route_util';
 import { ReviewLink } from '../../util/link_util';
 
-const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser }) => {
+const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser, currentUser }) => {
   const spots = {
     [spotId]: spot
   };
@@ -19,6 +19,7 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser }) => {
         <div className="spot-show">
           <SpotDetail spot={spot}
             user={user}
+            currentUser={currentUser}
             spotId={spotId}
             fetchSpot={fetchSpot}
             fetchUser={fetchUser}

@@ -7,12 +7,14 @@ import SpotShow from './spot_show';
 const mapStateToProps = (state, {match}) => {
   const spotId = parseInt(match.params.spotId);
   // console.log("Spot", spotId);
+  const currentUser = state.session.currentUser;
   const spot = selectSpot(state.entities, match.params.spotId);
   const user = state.entities.user;
   return {
     spotId,
     spot,
-    user
+    user,
+    currentUser
   };
 };
 

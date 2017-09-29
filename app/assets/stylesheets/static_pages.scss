@@ -18,8 +18,8 @@ body {
   font-weight: bold;
 }
 .index-image {
-  width: 100%;
   height: auto;
+  width: 100%;
   border-radius: 3px;
 }
 
@@ -108,12 +108,11 @@ li {
   position: relative;
 }
 
-#map {
-  height: 500px;
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-}
+// #map {
+//   height: 500px;
+//   position: absolute;
+//   overflow: hidden;
+// }
 
 
 // .single_spot_show:first-child {
@@ -121,11 +120,11 @@ li {
 //   height: 400px;
 // }
 
-// #splash-inline{
-//   display: flex;
-//   height: auto;
-//   width: 100%;
-// }
+#splash-inline{
+  display: flex;
+  height: 100%;
+  width: auto;
+}
 
  // #splash-inline div{
  //  margin-right: 5px;

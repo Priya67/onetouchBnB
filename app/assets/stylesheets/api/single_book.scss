@@ -8,11 +8,27 @@
 
 #booking-window {
   width: 1200px;
-  height: 400px;
+  height: 100%;
   border: 1px solid black;
+  text-align: center;
 }
 
 #booking-window h3 {
-  background-color: gray;
+  background-color: #FF5A5F;
   text-align: center;
+  margin-top: 0;
+  line-height: 5;
+}
+
+#checking-dates {
+  font-size: 18px;
+  padding: 5px;
+  margin: 0;
+  text-align: right;
+}
+
+#book-button {
+  height: 40px;
+  width: 50%;
+  margin: 40px;
 }
