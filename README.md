@@ -12,7 +12,7 @@
 
 ## Steps to setup OneTouchBnB app on your System
 * Download this project
-  * ** $ git clone https://github.com/Priya67/onetouchBnB **
+  * $ git clone https://github.com/Priya67/onetouchBnB
 
 * Install all dependencies
   * npm install
@@ -27,3 +27,5 @@
   * localhost:3000
 
 * You should be able to see OneTouchBnB in the browser
+
+## Tour of OneTouchBnB
