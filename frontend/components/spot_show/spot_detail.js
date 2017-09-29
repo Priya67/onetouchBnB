@@ -63,12 +63,8 @@ class SpotDetail extends React.Component {
     return (
       <div>
         <h4>Booking Confirmed</h4>
-        <br />
-        <p>From: </p>
-        <p>{this.state.startDate}</p>
-        <br />
-        <p>To: </p>
-        <p>{this.state.endDate}</p>
+        <p>From: {this.state.startDate}</p>
+        <p>To: {this.state.endDate}</p>
       </div>
     );
   }
