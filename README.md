@@ -79,10 +79,14 @@ src="https://github.com/Priya67/onetouchBnB/blob/master/public/spot_page.png"></
 <p align="center"><img width=80% heigth="300px"
 src="https://github.com/Priya67/onetouchBnB/blob/master/public/log_in_to_book_error.png"></p>
 
+<br>
+
 - when a user is logged in and tried to book a place then the app displays a confirmation with booking information
 
 <p align="center"><img width=80% heigth="300px"
 src="https://github.com/Priya67/onetouchBnB/blob/master/public/booking_confirmation.png"></p>
+
+<br>
 
 - A logged in user can also write review for the place by clicking the Write Review
 
