@@ -1,8 +1,7 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
-import { Link } from 'react-router-dom';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, Switch, Link, HashRouter } from 'react-router-dom';
 import { AuthRoute } from '../util/route_util';
 import Modal from 'react-modal';
 import SpotIndexContainer from './spot_index/spot_index_container';
@@ -49,7 +48,6 @@ class App extends React.Component {
           <Link to="/" className="header-link">
             <img src="http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506582675/images_evrzcv.png" alt="Logo" id="logo" />
           </Link>
-          <input type="text" name="search" id="search" placeholder="Search.."/>
           <GreetingContainer openSignUp={this.handleToggle('Sign Up')}
             openSignIn={this.handleToggle('Sign In')}
             />

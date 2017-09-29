@@ -10,6 +10,7 @@ class SpotIndex extends React.Component {
   componentDidMount() {
     this.props.fetchSpots();
   }
+
   render() {
     return (
       <div>
@@ -26,7 +27,11 @@ class SpotIndex extends React.Component {
             }
           </ul>
           <div id="mapdiv">
-            <SpotMap />
+            <SpotMap
+              spots={this.props.spots}
+              updateFilter={this.props.updateFilter}
+              singleSpot={false}
+            />
           </div>
         </div>
       </div>
