@@ -8,7 +8,7 @@
 
 ## This link will take you for a tour of OneTouchBnB in San Francisco.
 ````
-[https://onetouchbnb.herokuapp.com](https://onetouchbnb.herokuapp.com)
+([https://onetouchbnb.herokuapp.com](https://onetouchbnb.herokuapp.com))
 ````
 
 ## Steps to setup OneTouchBnB app on your System
