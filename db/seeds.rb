@@ -84,8 +84,8 @@ house1 = Spot.create!(
 
 house2 = Spot.create!(
   headline:'Luxurious Home',
-  description:'Big luxurious home in the heart of Kansas city. You can walk to malls, grocery stores and can spend time in beautiful parks in the neighborhood.',
-  location:'2626 Brooklyn Avenue, Kansas, MO-64127',
+  description:'Big luxurious home in the heart of sAN Francisco. You can walk to malls, grocery stores and can spend time in beautiful parks in the neighborhood.',
+  location:'620 Folsom Street, San Francisco, CA',
   img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506406434/spots/new1_m3hpdw.jpg',
   rating:3,
   number_of_beds:'1',
@@ -97,9 +97,9 @@ house2 = Spot.create!(
   room_type:'Private',
   cancellations:'Allowed before 7 days of booking date',
   house_rules:'Keep it clean and noise free and no other person allowed other than the guest',
-  lat: 39.078145,
-  lng: -94.557401,
-  city: 'Kansas, MO'
+  lat: 37.785104,
+  lng: -122.397674,
+  city: 'San Francisco, CA'
 )
 
 house3 = Spot.create!(
@@ -124,8 +124,8 @@ house3 = Spot.create!(
 
 house4 = Spot.create!(
   headline:'Room in 2Br /2Ba house',
-  description:'If you just want a cheap place to sleep, but you need a clean and convenience place, this will be the right choice for you. 3 mins walk to subway, 45 mins to Manhattan . 10 mins walk to Queens mall, Macy\'s, JCPpenny, Best Buy',
-  location:'392 Sip Avenue, Jersey City, New Jersey',
+  description:'If you just want a cheap place to sleep, but you need a clean and convenience place, this will be the right choice for you. 3 mins walk to Bart. 10 mins walk to mall, Macy\'s, JCPpenny, Best Buy',
+  location:'2701 van Ness Ave, San Francisco, CA',
   img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506407112/spots/new7_vvczgw.jpg',
   rating:4.7,
   number_of_beds:'1',
@@ -137,15 +137,15 @@ house4 = Spot.create!(
   room_type:'Sharing',
   cancellations:'Allowed if cancelled before 2 days of booking date',
   house_rules:'No pets allowed',
-  lat: 40.734051,
-  lng:  -74.078676,
-  city: 'Jersey City, NJ'
+  lat: 37.800560,
+  lng:  -122.424710,
+  city: 'San Francisco, CA'
 )
 
 house5 = Spot.create!(
   headline:'Neat spacious apartment',
   description:'Big apartment available for 3 people to live in private rooms. You will have this small private bedroom on the upper floor, as well as the shared living room and kitchen (my place is never crowded). You have options to sleep either in the loft bed or the pull-out sofa underneath it. Both beds are full sized. The mattress in the loft bed is memory foam, more preferable. However it would be perfect for 2 people who travel together but don\'t want to share bed. There is also a decent sized closet included in this bedroom.',
-  location:'Colonnade apartment, San Jose, CA',
+  location:'120 Page Street, San Francisco, CA',
   img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506407113/spots/new4_rk7s7i.jpg',
   rating:5,
   number_of_beds:'3',
@@ -157,9 +157,9 @@ house5 = Spot.create!(
   room_type:'Private',
   cancellations:'Allowed if cancelled before 7 days of booking date',
   house_rules:'No cats allowed',
-  lat: 37.333582,
-  lng: -121.884579,
-  city: 'San Jose, CA'
+  lat: 37.771896,
+  lng: -122.441311,
+  city: 'San Francisco, CA'
 )
 
 house6 = Spot.create!(
