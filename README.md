@@ -1,7 +1,7 @@
 # README
 
 <p align="center"><img width=60% src="https://github.com/Priya67/onetouchBnB/blob/master/public/name.png"></p>
-<p align="center">Now book the spot you like in San Francisco with OneTouch</p>
+<p align="center" font-size="30px">Now book the spot you like in San Francisco with OneTouch</p>
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
