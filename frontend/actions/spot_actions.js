@@ -38,7 +38,6 @@ export const fetchSpot = id => dispatch => (
 );
 
 export const fetchUser = id => dispatch => {
-  console.log("fetchUser id", id);
   return SpotApiUtil.fetchUser(id).then(user => (
     dispatch(receiveUser(user))
   ));

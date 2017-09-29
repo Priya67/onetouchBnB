@@ -18,7 +18,6 @@ const customStyles = {
     transform             : 'translate(-50%, -30%)'
     }
 };
-// import { AuthRoute, ProtectedRoute } from '../util/route_uil';
 
 class App extends React.Component {
   constructor(props) {

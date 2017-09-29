@@ -26,18 +26,9 @@ class SpotMap extends React.Component {
   constructor(props){
     let flag = 0;
     super(props);
-    console.log("spot_map_Constructor: ", this.props.spots);
   }
-
-  componentWillMount() {
-    console.log("spot_map_WillMount: ", this.props.spots);
-    // this.props.fetchSpots();
-    console.log("spot_map_WillMount2: ", this.props.spots);
-  }
-
 
   componentDidMount() {
-    console.log("spot_map_DidMount: ", this.props.spots);
     const map = this.refs.map;
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
@@ -46,12 +37,10 @@ class SpotMap extends React.Component {
     } else {
       this.registerListeners();
       this.MarkerManager.updateMarkers(this.props.spots);
-      console.log("spot_map_DidMount2: ", this.props.spots);
     }
   }
 
   componentDidUpdate() {
-    console.log("Update marker");
     if (this.props.singleSpot) {
       const targetSpotKey = Object.keys(this.props.spots)[0];
       const targetSpot = this.props.spots[targetSpotKey];
@@ -102,16 +91,3 @@ class SpotMap extends React.Component {
 }
 
 export default withRouter(SpotMap);
-
-// componentWillMount() {
-//   const map = new google.maps.Map(document.getElementsByClassName('map'), mapOptions);
-  // const map = this.refs.map;
-  // this.map = new google.maps.Map(map, mapOptions);
-  // this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
-  // if(this.props.singleSpot) {
-  //   this.props.fetchSpot(this.props.spotId);
-  // } else {
-  //   this.registerListeners();
-  //   this.MarkerManager.updateMarkers(this.props.spots);
-  // }
-// }

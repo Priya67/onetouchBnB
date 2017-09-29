@@ -24,7 +24,6 @@ class ReviewForm extends React.Component {
       spot_id: spotId,
       author_id: this.props.currentUser.id
     });
-    // console.log("review", review);
     this.props.createReview({review});
     this.navigateToSpotShow();
   }
@@ -34,7 +33,6 @@ class ReviewForm extends React.Component {
   }
 
   render() {
-    console.log("I am in review");
     return (
       <div className="review-form">
         <h1>Write a Review</h1>

@@ -30,9 +30,6 @@ class SessionForm extends React.Component {
 
   componentWillUnmount() {
     this.props.clearErrors();
-    // console.log("currentUser"+ this.props.currentUser);
-    // console.log("img"+ this.state.uploadedFileCloudinaryUrl);
-    // this.props.currentUser.img_url = this.state.uploadedFileCloudinaryUrl;
   }
 
   update(field) {
@@ -51,7 +48,6 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state.user;
-    console.log("user"+Object.values(user));
    this.props.processForm({ user }).then(() => this.props.closeModal());
   }
 
@@ -78,8 +74,6 @@ class SessionForm extends React.Component {
   }
 
   onImageDrop(files) {
-    // console.log("files"+files[0]);
-    // debugger
     this.setState({
       uploadedFile: files[0]
     });
@@ -105,8 +99,7 @@ class SessionForm extends React.Component {
               },
               uploadedFileCloudinaryUrl: response.body.secure_url,
             }));
-      console.log("img_url"+this.state.user.img_url);
-      }
+          }
     });
   }
 

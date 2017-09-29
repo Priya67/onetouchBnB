@@ -46,6 +46,11 @@ class Spot < ApplicationRecord
   foreign_key: :spot_id,
   class_name: :Review
 
+  has_many :bookings,
+  primary_key: :id,
+  foreign_key: :spot_id,
+  class_name: :Booking
+
   def self.in_bounds(bounds)
     self.where("lat < ?", bounds[:northEast][:lat])
       .where("lat > ?", bounds[:southWest][:lat])
@@ -56,5 +61,5 @@ class Spot < ApplicationRecord
   def average_rating
     reviews.average(:rating)
   end
-  
+
 end
