@@ -10,7 +10,8 @@
 <p>This super easy to use web app can be used to book houses across San Francisco city in California, USA. Developed with an aim to provide interactive and self navigating features for a user.</p>
 
 <br>
-## This link will take you for a tour of OneTouchBnB in San Francisco.
+
+* This link will take you for a tour of OneTouchBnB in San Francisco.
 
 ![https://onetouchbnb.herokuapp.com](https://onetouchbnb.herokuapp.com)
 
@@ -38,7 +39,7 @@
 
 ## Tour of OneTouchBnB
 
-- Splash Page
+- Splash Page - it shows houses on the basis of search performed on the map
 
 <p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/splash.png"> </p>
 
@@ -61,3 +62,29 @@
 <p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/logged_in_splash.png"></p>
 
 <br>
+
+- When a user clicks on a spot, this page with complete details is displayed
+
+<p align="center"><img width=80% heigth="300px"
+src="https://github.com/Priya67/onetouchBnB/blob/master/public/spot_page_top.png"></p>
+
+
+<p align="center"><img width=80% heigth="300px"
+src="https://github.com/Priya67/onetouchBnB/blob/master/public/spot_page.png"></p>
+
+<br>
+
+- When a user tries to book a place using booking window, if the user is not logged in then it throws an alert to login
+
+<p align="center"><img width=80% heigth="300px"
+src="https://github.com/Priya67/onetouchBnB/blob/master/public/log_in_to_book_error.png"></p>
+
+- when a user is logged in and tried to book a place then the app displays a confirmation with booking information
+
+<p align="center"><img width=80% heigth="300px"
+src="https://github.com/Priya67/onetouchBnB/blob/master/public/booking_confirmation.png"></p>
+
+- A logged in user can also write review for the place by clicking the Write Review
+
+<p align="center"><img width=80% heigth="600px"
+src="https://github.com/Priya67/onetouchBnB/blob/master/public/write_review.png"></p>
