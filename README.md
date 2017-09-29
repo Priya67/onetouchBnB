@@ -86,5 +86,5 @@ src="https://github.com/Priya67/onetouchBnB/blob/master/public/booking_confirmat
 
 - A logged in user can also write review for the place by clicking the Write Review
 
-<p align="center"><img width=80% heigth="600px"
+<p align="center"><img width=80% heigth="300px"
 src="https://github.com/Priya67/onetouchBnB/blob/master/public/write_review.png"></p>
