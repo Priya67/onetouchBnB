@@ -25,8 +25,8 @@ export const receiveReview = review => ({
   review
 });
 
-export const fetchSpots = () => dispatch => {
-  return SpotApiUtil.fetchSpots().then(spots => (
+export const fetchSpots = bounds => dispatch => {
+  return SpotApiUtil.fetchSpots(bounds).then(spots => (
     dispatch(receiveSpots(spots))
   ));
 };

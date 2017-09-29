@@ -3,6 +3,7 @@ class Api::SpotsController < ApplicationController
   def index
     bounds = params[:bounds]
     @spots = bounds ? Spot.in_bounds(bounds) : Spot.all
+    # debugger
     render :index
   end
 

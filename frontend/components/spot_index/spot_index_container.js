@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchSpots: () => dispatch(fetchSpots()),
+  fetchSpots: (bounds) => dispatch(fetchSpots(bounds)),
   updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
 });
 

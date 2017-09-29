@@ -10,7 +10,7 @@ class SpotIndex extends React.Component {
 
   componentWillMount() {
     console.log("spot_index_willMount: ",this.props.spots);
-    this.props.fetchSpots();
+    // this.props.fetchSpots();
     console.log("spot_index_willMount2: ",this.props.spots);
   }
 

@@ -9,7 +9,7 @@ const SpotsReducer = (state = {}, action) => {
   switch(action.type) {
     case RECEIVE_SPOTS:
       console.log("spot_reducer_RECEIVE_SPOTS");
-      receiveSpots = merge({}, state, action.spots);
+      receiveSpots = merge({}, action.spots);
       console.log("spot_reducer_RECEIVE_SPOTS2: ",receiveSpots);
       return receiveSpots;
 
