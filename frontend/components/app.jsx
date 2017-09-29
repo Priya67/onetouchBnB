@@ -48,6 +48,7 @@ class App extends React.Component {
           <Link to="/" className="header-link">
             <img src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506582675/images_evrzcv.png" alt="Logo" id="logo" />
           </Link>
+          <p><i>Find your perfect home in SF over oneTouch</i></p>
           <GreetingContainer openSignUp={this.handleToggle('Sign Up')}
             openSignIn={this.handleToggle('Sign In')}
             />
