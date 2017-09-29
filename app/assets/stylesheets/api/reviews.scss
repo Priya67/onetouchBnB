@@ -5,7 +5,7 @@
 #single-review {
   border-bottom: 1px solid black;
   width: inherit;
-  padding: 40px;
+  // padding: 40px;
 }
 
 #single-review ul {
@@ -20,10 +20,13 @@
   border: 1px solid black;
 }
 
-#author {
+#author_rating {
   display: flex;
+  justify-content: space-between;
 }
+
 #author p {
   vertical-align: middle;
-  margin-left: 10px;
+  margin-top: 0px;
+  font-size: 15px;
 }

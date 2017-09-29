@@ -3,12 +3,13 @@ import React from 'react';
 const Review = ({rating, body, author}) => (
   <div id="single-review">
     <ul>
-      <li id="author">
-        <img src={author.img_url}/>
-         <p>{author.username}</p>
+      <li id="author_rating">
+        <li id="author">
+          <img src={author.img_url}/>
+          <p>{author.username}</p>
+        </li>
+        <li><u>Rating</u>: {ratingDisplay(rating)}</li>
       </li>
-      <li><u>Rating</u>: {ratingDisplay(rating)}</li>
-      <br />
       <li><u>Comment</u>: {body}</li>
     </ul>
   </div>

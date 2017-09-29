@@ -115,6 +115,24 @@ class SessionForm extends React.Component {
       <div>
         <label>
           <input type="text"
+            value={this.state.lname}
+            onChange={this.update('lname')}
+            className="login-input"
+            placeholder="Last Name"
+          />
+        </label>
+        <br />
+        <label>
+          <input type="password"
+          value={this.state.password}
+          onChange={this.update('password')}
+          className="login-input"
+          placeholder="Password"
+        />
+        </label>
+        <br />
+        <label>
+          <input type="text"
             value={this.state.email}
             onChange={this.update('email')}
             className="signup-input"
@@ -166,24 +184,6 @@ class SessionForm extends React.Component {
                 className="login-input"
                 placeholder="First Name"
               />
-            </label>
-            <br />
-            <label>
-              <input type="text"
-                value={this.state.lname}
-                onChange={this.update('lname')}
-                className="login-input"
-                placeholder="Last Name"
-              />
-            </label>
-            <br />
-            <label>
-              <input type="password"
-              value={this.state.password}
-              onChange={this.update('password')}
-              className="login-input"
-              placeholder="Password"
-            />
             </label>
             <br />
               { this.props.modalType==='Sign Up' ? this.signupInputs() : "" }
