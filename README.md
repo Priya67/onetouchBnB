@@ -1,29 +1,12 @@
-# README
+# README(I am helpful)
 
 <p align="center"><img width=60% src="https://github.com/Priya67/onetouchBnB/blob/master/public/name.png"></p>
-<p align="center" font-size="30px">Now book the spot you like in San Francisco with OneTouch</p>
+<p align="center">Now book the spot you like in San Francisco with OneTouch</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This super easy to use web app can be used to book houses across San Francisco city in California, USA. Developed with an aim to provide interactive and self navigating features for a user.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-Link to OneTouchBnB: https://onetouchbnb.herokuapp.com/
+##This link will take you for a tour of OneTouchBnB in San Francisco.
+````
+https://onetouchbnb.herokuapp.com/
+````
