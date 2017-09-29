@@ -5,13 +5,17 @@ import SpotMap from '../SpotMap/spot_map';
 class SpotIndex extends React.Component {
   constructor(props) {
     super(props);
+    console.log("spot_index_constructor: ",this.props.spots);
   }
 
-  componentDidMount() {
+  componentWillMount() {
+    console.log("spot_index_willMount: ",this.props.spots);
     this.props.fetchSpots();
+    console.log("spot_index_willMount2: ",this.props.spots);
   }
 
   render() {
+    console.log("spot_index_render: ",this.props.spots);
     return (
       <div>
         <h3><u>Homes</u></h3>
@@ -31,6 +35,7 @@ class SpotIndex extends React.Component {
               spots={this.props.spots}
               updateFilter={this.props.updateFilter}
               singleSpot={false}
+              fetchSpots={this.props.fetchSpots}
             />
           </div>
         </div>

@@ -60,13 +60,15 @@ class SpotDetail extends React.Component {
   }
 
   confirmBooking() {
-    return (
-      <div>
-        <h4>Booking Confirmed</h4>
-        <p>From: {this.state.startDate}</p>
-        <p>To: {this.state.endDate}</p>
-      </div>
-    );
+    if(this.state.startDate!=='' && this.state.endDate!==''){
+      return (
+        <div>
+          <h4>Booking Confirmed</h4>
+          <p>From: {this.state.startDate}</p>
+          <p>To: {this.state.endDate}</p>
+        </div>
+      );
+    }
   }
 
   check(e) {

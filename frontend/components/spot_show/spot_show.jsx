@@ -29,13 +29,6 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser, currentUser }) => 
       <Link to={`/spots/${spotId}/review`}
           >Write Review</Link>
         <br />
-
-        <SpotMap
-          spots={spots}
-          spotId={spotId}
-          singleSpot={true}
-          fetchSpot={fetchSpot}
-        />
         </div>
     </div>
   );

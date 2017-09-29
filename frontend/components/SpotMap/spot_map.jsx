@@ -24,27 +24,19 @@ const mapOptions = {
 
 class SpotMap extends React.Component {
   constructor(props){
+    let flag = 0;
     super(props);
-    // this.initAutocomplete = this.initAutocomplete.bind(this);
+    console.log("spot_map_Constructor: ", this.props.spots);
   }
-  // componentDidMount() {
-  //   this.makeMap();
-  // }
-  //
-  //
-  // makeMap() {
-  //   const map = new google.maps.Map(this.mapNode, mapOptions);
-  //   // google.maps.event.trigger(map, "resize");
-  //   this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
-  //   if(this.props.singleSpot) {
-  //     this.props.fetchSpot(this.props.spotId);
-  //   } else {
-  //     this.registerListeners();
-  //     this.MarkerManager.updateMarkers(this.props.spots);
-  //   }
-  // }
 
-  componentDidMount() {
+  componentWillMount() {
+    console.log("spot_map_WillMount: ", this.props.spots);
+    // this.props.fetchSpots();
+    console.log("spot_map_WillMount2: ", this.props.spots);
+  }
+
+  loadMap() {
+    console.log("spot_map_DidMount: ", this.props.spots);
     const map = this.refs.map;
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     if ( this.props.location.state )
@@ -57,15 +49,28 @@ class SpotMap extends React.Component {
     } else {
       this.registerListeners();
       this.MarkerManager.updateMarkers(this.props.spots);
+      console.log("spot_map_DidMount2: ", this.props.spots);
     }
   }
+
+  componentDidMount() {
+    this.loadMap();
+  }
+
+  componentDidUpdate() {
+    console.log("Update marker");
+    if (!this.props.singleSpot) {
+      this.MarkerManager.updateMarkers(this.props.spots);
+    }
+    console.log("Update marker2");
+  }
+
 
   componentWillUnmount(){
     delete this.map;
   }
 
   registerListeners() {
-    // this.initAutocomplete();
     google.maps.event.addListener(this.map, 'idle', () => {
       const { north, south, east, west } = this.map.getBounds().toJSON();
       const bounds = {
