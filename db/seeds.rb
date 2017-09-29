@@ -63,7 +63,7 @@ justin = User.create!(
 house1 = Spot.create!(
   headline:'Beautiful place',
   description:'Beautiful house near lake and school with all modern amenities. Please be aware that there are security cameras in the living room (facing the front door) and in the hallways. I have never had a problem and I never watch the video, but I think it is a good deterrent.',
-  location:'122 Shore Ave, Syracuse, NY-13209',
+  location:'100 Broderick St, San Francisco, CA - 94117',
   img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506407116/spots/new3_oudh7p.jpg',
   rating:4.2,
   number_of_beds:'2',
@@ -71,20 +71,20 @@ house1 = Spot.create!(
   number_of_bedroom: 1,
   number_of_bathroom: 1,
   user_id: priyanka.id,
-  price:70,
+  price:270,
   room_type:'Private',
   cancellations:'Flexible - 24 hours cancellation',
   house_rules:'No smoking
    No drugs
   No parties',
-  lat: 43.098432,
-  lng: 76.244554,
-  city: 'Syracuse, NY'
+  lat: 37.771448,
+  lng: -122.438111,
+  city: 'San Francisco, CA'
 );
 
 house2 = Spot.create!(
   headline:'Luxurious Home',
-  description:'Big luxurious home in the heart of Kansas city. My place is close to the subway, Goodbye Blue Monday Inc, Tender Trap, and , SoCo. You’ll love my place because of the modern apartment, the great views of the city, and the quick ride to Manhattan. My place is good for couples, solo adventurers, and business travelers.',
+  description:'Big luxurious home in the heart of Kansas city. You can walk to malls, grocery stores and can spend time in beautiful parks in the neighborhood.',
   location:'2626 Brooklyn Avenue, Kansas, MO-64127',
   img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506406434/spots/new1_m3hpdw.jpg',
   rating:3,
@@ -98,7 +98,7 @@ house2 = Spot.create!(
   cancellations:'Allowed before 7 days of booking date',
   house_rules:'Keep it clean and noise free and no other person allowed other than the guest',
   lat: 39.078145,
-  lng: 94.557401,
+  lng: -94.557401,
   city: 'Kansas, MO'
 )
 
@@ -226,33 +226,39 @@ house8 = Spot.create!(
 review1 = Review.create!(
   body: 'Loved it',
   rating: 5,
-  spot_id: house1.id
+  spot_id: house1.id,
+  author_id: selena.id
 );
 
 review2 = Review.create!(
-  body: 'Like dit very much',
+  body: 'Liked it very much',
   rating: 4,
-  spot_id: house2.id
+  spot_id: house2.id,
+  author_id: priyanka.id
 );
 
 review3 = Review.create!(
   body: 'Had an awesome stay',
   rating: 4.2,
-  spot_id: house3.id
+  spot_id: house3.id,
+  author_id: justin.id
 );
 
 review4 = Review.create!(
   body: 'Good for vacation',
   rating: 3,
-  spot_id: house4.id
+  spot_id: house4.id,
+  author_id: taylor.id
 );
 review5 = Review.create!(
   body: 'Must visit',
   rating: 4,
-  spot_id: house5.id
+  spot_id: house5.id,
+  author_id: priyanka.id
 );
 review6 = Review.create!(
   body: 'Will come again',
   rating: 5,
-  spot_id: house6.id
+  spot_id: house6.id,
+  author_id: taylor.id
 );

@@ -4,10 +4,26 @@
 
 #single-review {
   border-bottom: 1px solid black;
-  width: 40%;
+  width: inherit;
   padding: 40px;
 }
 
 #single-review ul {
   list-style-type: none;
+  margin-left: auto;
+}
+
+#single-review img {
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+#author {
+  display: flex;
+}
+#author p {
+  vertical-align: middle;
+  margin-left: 10px;
 }

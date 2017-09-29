@@ -13,5 +13,9 @@ end
 json.reviews do
   json.array! spot.reviews do |review|
     json.extract! review, :id, :spot_id, :rating, :body
+
+    json.author do
+      json.extract! review.author, :id, :img_url, :username
+    end
   end
 end

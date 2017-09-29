@@ -2,7 +2,7 @@ import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
 import { Route, Switch, Link, HashRouter } from 'react-router-dom';
-import { AuthRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from 'react-modal';
 import SpotIndexContainer from './spot_index/spot_index_container';
 import SpotShowContainer from './spot_show/spot_show_container';
@@ -54,7 +54,7 @@ class App extends React.Component {
         </header>
         <Route exact path="/spots/:spotId" component={SpotShowContainer} />
         <Route exact path="/" component={SpotIndexContainer} />
-        <Route exact path="/spots/:spotId/review" component={ReviewFormContainer}/>
+        <ProtectedRoute exact path="/spots/:spotId/review" component={ReviewFormContainer}/>
       </div>
     );
   }

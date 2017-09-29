@@ -31,6 +31,7 @@ class SpotDetail extends React.Component {
               rating={review.rating}
               body={review.body}
               key={review.id}
+              author={review.author}
               />
           )));
         }
@@ -80,43 +81,52 @@ class SpotDetail extends React.Component {
     return (
       <div>
         <img className="index-image" src={this.props.spot.img_url} />
+        <div id="take-on-side">
+          <div>
             <ul className="spot_list">
-                <li id="head"><h1>{this.props.spot.headline} in {this.props.spot.city}</h1></li>
-                <div id="take-on-side">
-                  <div>
-                    <li><h3><u>Owner</u>:  {this.props.user.fname}, {this.props.user.lname}</h3></li>
-                    <br />
-                    <li id="user-pic-home"><img src={this.props.user.img_url}/></li>
-                    <br />
-                    <br />
-                    <li>{this.props.spot.room_type} Room </li>
-                    <li>{this.rating(this.props.spot.rating)}</li>
-                    <br/>
-                    <h3><b><u>Rental Price</u>: </b></h3>
-                    <li>{this.props.spot.price}$ / night</li>
-                    <br />
-                    <h3><b><u>Details</u>:</b></h3>
-                    <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/guest.png"/>  {this.props.spot.number_of_guests} guests</li>
-                    <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bedroom.png"/>  {this.props.spot.number_of_bedroom} bedroom</li>
-                    <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506245769/spots/bed.png"/>  {this.props.spot.number_of_beds} bed</li>
-                    <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bathroom.png"/>  {this.props.spot.number_of_bathroom} bathroom</li>
-                    <br />
-                    <h3><u>Description</u></h3>
-                    <li>{this.props.spot.description}</li>
-                    <br />
-                    <br />
-                    <h3><u>House Rules</u></h3>
-                    <li>{this.props.spot.house_rules}</li>
-                    <br />
-                    <br />
-                    <h3><u>Cancellation policy</u></h3>
-                    <li>{this.props.spot.cancellations}</li>
-                    <br />
-                    <div className="reviews">
-                      <h3><u>Reviews</u></h3>
-                      {this.reviewList()}
-                    </div>
-                  </div>
+              <div id= "user-info-rating">
+                <div id="show_page_city_rating">
+                  <li id="head"><h2>{this.props.spot.headline}</h2></li>
+                  <br />
+                  <li>{this.props.spot.room_type} Room </li>
+                  <li>{this.props.spot.city}</li>
+                  <li>{this.rating(this.props.spot.rating)}</li>
+                </div>
+                <div id="host-info">
+                  <li id="user-pic-home"><img src={this.props.user.img_url}/></li>
+                  <br />
+                  <li><p id="host-name">{this.props.user.fname}</p></li>
+                </div>
+              </div>
+                <br />
+                <h3><b><u>Rental Price</u>: </b></h3>
+                <li>{this.props.spot.price}$ / night</li>
+                <br />
+                <h3><b><u>Details</u>:</b></h3>
+                <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/guest.png"/>  {this.props.spot.number_of_guests} guests</li>
+                <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bedroom.png"/>  {this.props.spot.number_of_bedroom} bedroom</li>
+                <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506245769/spots/bed.png"/>  {this.props.spot.number_of_beds} bed</li>
+                <li ><img id="bed" src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506417270/bgs/bathroom.png"/>  {this.props.spot.number_of_bathroom} bathroom</li>
+                <br />
+                <h3><u>Description</u></h3>
+                <li>{this.props.spot.description}</li>
+                <br />
+                <br />
+                <h3><u>House Rules</u></h3>
+                <li>{this.props.spot.house_rules}</li>
+                <br />
+                <br />
+                <h3><u>Cancellation policy</u></h3>
+                <li>{this.props.spot.cancellations}</li>
+                <br />
+                <br />
+                <div className="reviews">
+                  <h3><u>Reviews</u></h3>
+                  {this.reviewList()}
+                </div>
+            </ul>
+          </div>
+
                   <div id="booking-window">
                     <h3>Book this spot</h3>
                     <form>
@@ -129,17 +139,17 @@ class SpotDetail extends React.Component {
                         value={this.state.startDate}
                         onChange={this.handleChangeStart()}
                          />
-                      <br />
-
-                          <label>Check Out:  </label>
-                          <br />
-                          <input
-                            id="checking-dates"
-                            type="date"
-                            name="endDate"
-                            value={this.state.endDate}
-                            onChange={this.handleChangeEnd()}
-                            />
+                        <br />
+                        <br />
+                        <label>Check Out:  </label>
+                        <br />
+                        <input
+                          id="checking-dates"
+                          type="date"
+                          name="endDate"
+                          value={this.state.endDate}
+                          onChange={this.handleChangeEnd()}
+                          />
                           <br />
                           <input type="submit" id="book-button" value="Book" onClick={this.check}/>
                     </form>
@@ -149,9 +159,6 @@ class SpotDetail extends React.Component {
 
                   </div>
             </div>
-
-            </ul>
-
       </div>
     );
   }
