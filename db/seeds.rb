@@ -166,7 +166,7 @@ house6 = Spot.create!(
   headline:'Private Room/Bathroom',
   description:'This is a medium sized room, with two twin mattresses and a private bathroom, in a multi room house. Orange or Apple Juice and Coffee is provided. As our Hotel quality Towels and hand towels, sparkling water, and disinfectant wipes. Shampoo, Conditioner, and bars of soap are provided upon request. No one knows the city better than us. Perfect for Students, Backpackers, and Adventurers. We\'ve had travelers from all over the world and can help cater to your needs. Ask!',
   location:'250 26th Ave, San Francisco, CA',
-  img_url:'http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506407113/spots/nwe5_jfckmp.jpg',
+  img_url:'https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506407113/spots/nwe5_jfckmp.jpg',
   rating:4.5,
   number_of_beds:'2',
   number_of_guests: 3,

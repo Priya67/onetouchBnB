@@ -46,7 +46,7 @@ class App extends React.Component {
         </Modal>
         <header>
           <Link to="/" className="header-link">
-            <img src="http://res.cloudinary.com/dlgwlvcuy/image/upload/v1506582675/images_evrzcv.png" alt="Logo" id="logo" />
+            <img src="https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506582675/images_evrzcv.png" alt="Logo" id="logo" />
           </Link>
           <GreetingContainer openSignUp={this.handleToggle('Sign Up')}
             openSignIn={this.handleToggle('Sign In')}
