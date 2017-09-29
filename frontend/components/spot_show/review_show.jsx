@@ -8,7 +8,7 @@ const Review = ({rating, body, author}) => (
           <img src={author.img_url}/>
           <p>{author.username}</p>
         </span>
-        <li><u>Rating</u>: {ratingDisplay(rating)}</li>
+        <span><u>Rating</u>: {ratingDisplay(rating)}</span>
       </li>
       <li><u>Comment</u>: {body}</li>
     </ul>

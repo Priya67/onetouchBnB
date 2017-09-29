@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #single-review {
+  padding-bottom: 5px;
   border-bottom: 1px solid black;
   width: inherit;
   // padding: 40px;
@@ -14,6 +15,7 @@
 }
 
 #single-review img {
+  margin-top: 5px;
   border-radius: 30px;
   height: 50px;
   width: 50px;
