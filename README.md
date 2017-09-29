@@ -34,16 +34,16 @@
 
 - Splash Page
 
-<p align="center"><img width=50% src="https://github.com/Priya67/onetouchBnB/blob/master/public/splash.png"> </p>
+<p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/splash.png"> </p>
 
 - Log In Modal
 
-<p align="center"><img width=60% src="https://github.com/Priya67/onetouchBnB/blob/master/public/signin.png"></p>
+<p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/signin.png"></p>
 
 - Sign Up Modal
 
-<p align="center"><img width=60% src="https://github.com/Priya67/onetouchBnB/blob/master/public/signup.png"></p>
+<p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/signup.png"></p>
 
 - After the user is logged in, it will look something like this
 
-<p align="center"><img width=60% src="https://github.com/Priya67/onetouchBnB/blob/master/public/logged_in_splash.png"></p>
+<p align="center"><img width=80% heigth="300px" src="https://github.com/Priya67/onetouchBnB/blob/master/public/logged_in_splash.png"></p>
