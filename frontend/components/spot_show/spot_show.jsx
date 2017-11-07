@@ -30,12 +30,10 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser,
             />
           < br/>
 
-        <Link to={`/spots/${spotId}/review`}
-          >Write Review</Link>
-        <br />
-      </div>
-    </div>
-      <div>
+          <Link to={`/spots/${spotId}/review`}
+            >Write Review</Link>
+          <br />
+        </div>
       </div>
     </div>
   );

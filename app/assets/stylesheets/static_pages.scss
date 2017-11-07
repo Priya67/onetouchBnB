@@ -90,9 +90,17 @@ ul{
   height: 2px;
 }
 
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
 #foot {
   display: flex;
   justify-content: space-between;
+  // position: fixed;
+  // bottom: 0;
+  // margin-bottom: ;
 }
 
 #foot div {
