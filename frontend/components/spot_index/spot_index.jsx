@@ -24,6 +24,9 @@ class SpotIndex extends React.Component {
             }
           </ul>
           <div id="mapdiv">
+            <div>
+              <p>Zoom in over map to search</p>
+            </div>
             <SpotMap
               spots={this.props.spots}
               updateFilter={this.props.updateFilter}

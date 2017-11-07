@@ -62,10 +62,24 @@ li {
   vertical-align: bottom;
 }
 
-#splash-inline div #map {
-  height: 1000px;
-  width: 500px;
-  position: relative;
+#mapdiv #map {
+  height: inherit;
+  width: 100%;
+  position: fixed;
+}
+
+#mapdiv div {
+  text-align: center;
+  display: block;
+}
+
+#mapdiv {
+  height: 700px;
+  width: 80%;
+}
+
+#splash-inline ul {
+  width: 100%
 }
 
 .single_spot_show:first-child {
@@ -75,8 +89,8 @@ li {
 
 #splash-inline{
   display: flex;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 ul{
