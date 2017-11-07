@@ -6,14 +6,17 @@ import SpotDetail from './spot_detail';
 import SpotMap from '../SpotMap/spot_map';
 import { ProtectedRoute } from '../../util/route_util';
 import { ReviewLink } from '../../util/link_util';
+import { BookingFormContainer } from './booking_form_container';
 
-const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser, currentUser }) => {
+const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser,
+                    currentUser, createBooking }) => {
   const spots = {
     [spotId]: spot
   };
 
   return (
-    <div className="single_spot_show">
+    <div>
+      <div className="single_spot_show">
         <Link to="/"><h3>Back to homes</h3></Link>
         <br />
         <div className="spot-show">
@@ -23,13 +26,17 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser, currentUser }) => 
             spotId={spotId}
             fetchSpot={fetchSpot}
             fetchUser={fetchUser}
-          />
-        < br/>
+            createBooking={createBooking}
+            />
+          < br/>
 
-      <Link to={`/spots/${spotId}/review`}
+        <Link to={`/spots/${spotId}/review`}
           >Write Review</Link>
         <br />
-        </div>
+      </div>
+    </div>
+      <div>
+      </div>
     </div>
   );
 };

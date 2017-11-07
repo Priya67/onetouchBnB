@@ -20,7 +20,8 @@ const mapStateToProps = (state, {match}) => {
 
 const mapDispatchToProps = dispatch => ({
   fetchSpot: (id) => dispatch(fetchSpot(id)),
-  fetchUser: (id) => dispatch(fetchUser(id))
+  fetchUser: (id) => dispatch(fetchUser(id)),
+  createBooking: (booking) => dispatch(createBooking(booking))
 });
 
 export default connect(

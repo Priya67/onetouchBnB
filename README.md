@@ -11,7 +11,7 @@
 
 <br>
 
-* This link will take you for a tour of OneTouchBnB in San Francisco.
+* This link will take you on a tour of OneTouchBnB in San Francisco.
 
 ![https://onetouchbnb.herokuapp.com](https://onetouchbnb.herokuapp.com)
 
