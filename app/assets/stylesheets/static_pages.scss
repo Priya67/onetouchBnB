@@ -107,8 +107,12 @@ ul{
   align-self: flex-end;
   vertical-align: middle;
   display: inline-block;
-  margin-top: 20px;
   margin: 15px;
+}
+
+#foot_name p {
+  font-size: 17px;
+  font-family: serif;
 }
 
 #foot_links {
