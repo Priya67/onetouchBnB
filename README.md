@@ -1,6 +1,3 @@
-## README
-*(I am helpful)*
-
 <p align="center"><img width=60% src="https://github.com/Priya67/onetouchBnB/blob/master/public/name.png"></p>
 <p align="center">Now book the spot you like in San Francisco with OneTouch</p>
 
