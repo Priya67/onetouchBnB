@@ -5,7 +5,7 @@ const Review = ({rating, body, author}) => (
     <ul>
       <li id="author_rating">
         <span id="author">
-          <img src={author.img_url}/>
+          <img src={author.img_url ? author.img_url : "https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506118306/user_aiufn8.png"}/>
           <p>{author.username}</p>
         </span>
         <span><u>Rating</u>: {ratingDisplay(rating)}</span>
