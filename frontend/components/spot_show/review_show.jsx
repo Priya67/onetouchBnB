@@ -8,9 +8,9 @@ const Review = ({rating, body, author}) => (
           <img src={author.img_url ? author.img_url : "https://res.cloudinary.com/dlgwlvcuy/image/upload/v1506118306/user_aiufn8.png"}/>
           <p>{author.username}</p>
         </span>
-        <span><u>Rating</u>: {ratingDisplay(rating)}</span>
+        <span id="comment">{body}</span>
+        <span id="rating">{ratingDisplay(rating)}</span>
       </li>
-      <li><u>Comment</u>: {body}</li>
     </ul>
   </div>
 );

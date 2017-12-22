@@ -3,10 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #single-review {
-  padding-bottom: 5px;
+  padding-top: 15px;
   border-bottom: 1px solid black;
   width: inherit;
-  // padding: 40px;
+  text-align: center;
+  top: 0px;
+  bottom: 0px;
 }
 
 #single-review ul {
@@ -14,12 +16,35 @@
   margin-left: auto;
 }
 
+#comment{
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
+  display: flex;
+  width: 60%;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 20px;
+  background-color: lightgray;
+  height: 100%;
+  margin-top: 3%;
+  position: relative;
+}
+
+#rating {
+float: right;
+text-align: center;
+margin-top: 15px;
+}
+
 #single-review img {
-  margin-top: 5px;
   border-radius: 30px;
   height: 50px;
   width: 50px;
   border: 1px solid black;
+  justify-content: center;
+  vertical-align: middle;
+  display: flex;
 }
 
 #author_rating {
@@ -28,7 +53,8 @@
 }
 
 #author p {
-  vertical-align: middle;
+  width: inherit;
+  text-align: center;
   margin-top: 0px;
   font-size: 15px;
 }
