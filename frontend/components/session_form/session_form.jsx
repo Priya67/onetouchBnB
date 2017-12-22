@@ -53,7 +53,7 @@ class SessionForm extends React.Component {
 
   changedemo(e){
     this.setState({
-      user:{username: "User",
+      user:{username: "john",
         password: "password"}
     }, () => {
       const user = this.state.user;

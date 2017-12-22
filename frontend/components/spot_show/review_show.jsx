@@ -18,10 +18,10 @@ const Review = ({rating, body, author}) => (
 function ratingDisplay(length) {
   let r = [];
   for(let i = 0; i<length; i++) {
-    r.push(<b key={i}>{String.fromCharCode(9733)}</b>);
+  r.push(<span class="fa fa-star checked"></span>);
   }
   for(let j = 0; j<5-length;j++) {
-    r.push(<b key={5-j}>{String.fromCharCode(9734)}</b>);
+    r.push(<span class="fa fa-star unchecked"></span>);
   }
   return r;
 }
