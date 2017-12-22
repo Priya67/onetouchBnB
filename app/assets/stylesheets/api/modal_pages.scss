@@ -1,15 +1,21 @@
 .login-input[type=text], .login-input[type=password], .signup-input[type=text] {
   width: 100%;
-  height: 40px;
+  height: 30px;
   margin-top: 10px;
+  background-color: #EAEDED;
 }
 
 .login-input[type=text]:focus, .login-input[type=password]:focus, .signup-input[type=text]:focus {
   background-color: yellow;
 }
 
-.login-form-container h1 {
+.login-form-container h3 {
   text-align: center;
+  margin-top: 5px;
+}
+
+.login-form-container {
+  height: 50%;
 }
 
 .login-form-container button {
@@ -21,4 +27,38 @@
 #select-image {
   display: flex;
   justify-content: center;
+}
+
+#imagecloud {
+  // background-color: blue;
+  // margin-top: 25%;
+  // margin-bottom: 15%;
+  // margin-left: 0%;
+  // margin-right: 0%;
+  display: flex;
+  vertical-align: middle;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  // align-self: center;
+  // display: justify-content;
+}
+
+.signuperror li {
+  font-size: 12px;
+  display: list-item;
+}
+
+#demo-login {
+  display: flex;
+}
+
+#demo-login button{
+    text-align: center;
+    border-radius: 4px;
+}
+
+.signuperror {
+  list-style-type: square;
+  align-items: left;
 }

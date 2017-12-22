@@ -63,13 +63,13 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     return(
-      <ul>
+      <ol class="signuperror">
         {this.props.errors.map((error, i) => (
           <li key={i}>
             { error }
           </li>
         ))}
-      </ul>
+      </ol>
     );
   }
 
@@ -112,8 +112,9 @@ class SessionForm extends React.Component {
             onChange={this.update('fname')}
             className="signup-input"
             placeholder="First Name"
-            />
+        />
         </label>
+
         <label>
           <input type="text"
             value={this.state.lname}
@@ -123,6 +124,7 @@ class SessionForm extends React.Component {
           />
         </label>
         <br />
+
         <label>
           <input type="text"
             value={this.state.email}
@@ -131,6 +133,7 @@ class SessionForm extends React.Component {
             placeholder="Email Address"/>
         </label>
         <br />
+
         <label>
           <input type="text"
             value={this.state.phone_number}
@@ -140,14 +143,17 @@ class SessionForm extends React.Component {
         </label>
         <br/>
         <br/>
-        <div id="select-image">
+
+      <div id="select-image">
           <Dropzone
+            class="drop"
             multiple={false}
             accept="image/*"
             onDrop={this.onImageDrop.bind(this)}>
-            <p>select a file to upload.</p>
+            <div id="imagecloud">{this.state.uploadedFileCloudinaryUrl!="" ? <img height="200" width="200" opacity="0.8" src={this.state.uploadedFileCloudinaryUrl}/> : <p>select an image to upload</p>}</div>
           </Dropzone>
         </div>
+
       </div>
     );
   }
@@ -155,11 +161,12 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="login-form-container">
-        <h1>{this.props.modalType}</h1>
+
+        <h3>{this.props.modalType}</h3>
         {this.renderErrors()}
+
         <form onSubmit={this.handleSubmit}>
           <div className="login-form">
-            <br />
             <label>
               <input type="text"
                 value={this.state.username}
@@ -169,6 +176,7 @@ class SessionForm extends React.Component {
               />
             </label>
             <br />
+
             <label>
               <input type="password"
                 value={this.state.password}
@@ -179,12 +187,15 @@ class SessionForm extends React.Component {
             </label>
             <br />
               { this.props.modalType==='Sign Up' ? this.signupInputs() : "" }
-          <br />
-          <button>{this.props.modalType}</button>
+            <br />
+            <div id="demo-login">
+              <button>{this.props.modalType}</button>
+              { this.props.modalType==='Sign Up' ? "" : <button onClick={this.changedemo} >demo login</button> }
+            </div>
           </div>
         </form>
         <br />
-        { this.props.modalType==='Sign Up' ? "" : <div><br /><button onClick={this.changedemo} >demo login</button></div> }
+
       </div>
     );
   }

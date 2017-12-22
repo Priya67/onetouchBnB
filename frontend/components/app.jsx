@@ -9,13 +9,26 @@ import SpotShowContainer from './spot_show/spot_show_container';
 import ReviewFormContainer from './spot_show/review_form_container';
 
 const customStyles = {
+  overlay : {
+    position          : 'fixed',
+    top               : 0,
+    left              : 0,
+    right             : 0,
+    bottom            : 0,
+    backgroundColor   : 'rgba(255, 255, 255, 0.75)'
+  },
   content : {
+    position                   : 'absolute',
     top                   : '30%',
     left                  : '50%',
     right                 : '60%',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -30%)'
+    WebkitOverflowScrolling    : 'touch',
+    borderRadius               : '4px',
+    // max-height            : '100%',
+    overflow            : 'auto',
+    transform: 'translate(-50%, -30%)'
     }
 };
 
