@@ -11,27 +11,21 @@ body {
   margin-top: 0px;
 }
 
-#root {
-  margin-top: 0px;
-}
-
+// rating stars css
 .checked {
   content: "\f005 \f005 \f005 \f005 \f005";
   color: #008489;
 }
 
+// rating stars css for unchecked
 .unchecked {
   content: "\f006 \f006 \f006 \f006 \f006";
   color: #D8D8D8;
 }
 
+// price in bold
 #price {
   font-weight: bold;
-}
-.index-image {
-  height: 590px;
-  width: 100%;
-  border-radius: 3px;
 }
 
 .spot-index-item p {
@@ -142,33 +136,22 @@ ul{
 footer {
   bottom: 0;
   width: 100%;
-  height: 20px;
-  margin-bottom: -50px;
-  // position: fixed;
+  height: 50px;
 }
 
 #foot {
   display: flex;
   justify-content: space-between;
-  // position: fixed;
-  // bottom: 0;
-  // margin-bottom: ;
+  height: 50px;
 }
 
 #foot div {
-  justify-content: space-around;
-  text-align: center;
-  margin: 10px;
   margin-left: 50px;
   margin-right: 50px;
 }
 
 #foot_links a {
   align-self: flex-end;
-  vertical-align: middle;
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -180,4 +163,9 @@ footer {
 
 #foot_links {
   vertical-align: middle;
+  vertical-align: center;
+  text-align: center;
+  align-self: flex-start;
+  display: flex;
+  height: 50px;
 }

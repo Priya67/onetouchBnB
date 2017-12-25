@@ -1,40 +1,58 @@
+// Name of the spot on spot show page
 #head {
   padding-left: 0px;
 }
 
-#single_show_map {
-  width: 100%;
-  height: 400px;
+// main div container of spot_show
+.single_spot_show {
+  margin-top: 80px;
+  position: absolute;
+  width: 98%;
 }
 
+// main div container except the 'back to homes' link
 .spot-show {
   margin-bottom: 50px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
+// host name in details section
 #host-name {
   font-size: 18px;
   margin-top: 0;
 }
 
+// Write Review link
 .spot-show Link {
   font-size: 80px;
 }
 
-
+// User's image
 #user-pic-home img {
   border-radius: 30px;
   height: 70px;
   width: 70px;
 }
 
+// Headline, room-type, rating in the details show page and host-info
 #user-info-rating {
     display: flex;
     justify-content: space-between;
 }
 
+// Headline, room-type, rating in the details show page
 #show_page_city_rating li {
   font-size: 18px;
   padding: 5px;
+}
+
+
+// index image on the splash page
+.index-image {
+  height: 520px;
+  width: 70%;
+  margin-left: 15%;
+  // margin-right: 30%;
+  border-radius: 3px;
 }

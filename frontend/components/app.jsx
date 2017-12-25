@@ -68,7 +68,8 @@ class App extends React.Component {
         <Route exact path="/spots/:spotId" component={SpotShowContainer} />
         <Route exact path="/" component={SpotIndexContainer} />
         <ProtectedRoute exact path="/spots/:spotId/review" component={ReviewFormContainer}/>
-      </div>
+        
+    </div>
     );
   }
 

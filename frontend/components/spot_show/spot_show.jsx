@@ -15,7 +15,6 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser,
   };
 
   return (
-    <div>
       <div className="single_spot_show">
         <Link to="/"><h3>Back to homes</h3></Link>
         <br />
@@ -51,7 +50,6 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser,
           </div>
         </footer>
       </div>
-    </div>
   );
 };
 
