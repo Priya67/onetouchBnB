@@ -1,3 +1,5 @@
+
+// header with logo, tag line and session links
 header {
   display: flex;
   justify-content: space-between;
@@ -5,24 +7,13 @@ header {
   padding: 10px;
   border-bottom: 1px solid #888888;
   box-shadow: 5px 2px 5px #888888;
-  z-index: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  position: fixed;
+  margin-top: -5px;
 }
 
-.header-name {
-  margin-top: 15px;
-  font-size: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.header-button {
-  background-color: white;
-  font-weight: bold;
-  width: 80px;
-  font-size: 14px;
-  height: 28px;
-}
-
+// logo is the airbnb logo
 #logo {
   margin-top: 10px;
   height: 50px;
@@ -30,7 +21,7 @@ header {
   vertical-align: baseline;
 }
 
-
+// yet to implement
 #search {
   width: 300px;
   height: 30px;
@@ -39,18 +30,21 @@ header {
   vertical-align: middle;
 }
 
-
+// this is the user's profile pic
 #user-pic img {
   border-radius: 30px;
   height: 45px;
   width: 45px;
+  margin-right: 30px;
 }
 
+// this is the div of user's profile pic
 #user-pic {
   display: flex;
   justify-content: space-between;
 }
 
+// login signup button
 .login-signup button {
   margin-left: 10px;
   background:none;
@@ -60,40 +54,52 @@ header {
   font: inherit;
   cursor: pointer;
   vertical-align: middle;
-  margin-top: 14px;
+  margin-top: 20px;
   vertical-align: baseline;
-  padding-right: 10px;
+  // padding-right: 25px;
   font-size: 20px;
 }
 
+.login-signup button:nth-child(2) {
+  margin-right: 30px;
+  margin-left: 15px;
+}
+
+// drop-down menubar on user's profile image
 .dropbtn {
     color: white;
-    // padding-bottom: 16px;
     padding: 15px;
-    // padding-bottom: 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
+// the user's profile image
 .dropbtn img {
   height: 45px;
   border-radius: 30px;
+  margin-right: 30px;
 }
 
+// menu bar div containing both image and the list
 .dropdown {
     float: right;
     position: relative;
     display: inline-block;
 }
 
+// menu bar list as a paragraph
 .dropdown-content p{
   justify-content: center;
   height: 100%;
+  padding: 0px;
+  margin: 0px;
+  line-height: 40px;
+  font-height: 25px;
 }
 
+// this is the list of all contents(all <p>)
 .dropdown-content {
-  // display: flex;
     vertical-align: middle;
     display: none;
     right: 0;
@@ -102,16 +108,19 @@ header {
     min-width: 200px;
     font-size: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1000;
+    background-color: lightblue;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+// Taken out
+// .dropdown-content a {
+//     color: black;
+//     padding: 12px 16px;
+//     text-decoration: none;
+//     display: block;
+// }
 
+// Hover effect on menubar list
 .dropdown-content p:hover {
   font-size: 19px;
   color: #3a4b78;
@@ -119,6 +128,7 @@ header {
   cursor: pointer;
 }
 
+// the hover effect again
 .dropdown:hover .dropdown-content {
     display: block;
 }

@@ -2,11 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// main body
 body {
   font-family: 'Roboto Slab', serif;
   background-color: #FFFFFF;
   font-size: 20px;
   height: auto;
+  margin-top: 0px;
+}
+
+#root {
+  margin-top: 0px;
 }
 
 .checked {
@@ -74,23 +80,43 @@ li {
 
 #mapdiv #map {
   height: inherit;
-  width: 100%;
-  position: fixed;
 }
 
-#mapdiv div {
+#mapdiv p{
   text-align: center;
   display: block;
+  font-size: 15px;
+  float: right;
 }
 
 #mapdiv {
-  height: 700px;
-  width: 60%;
+  height: 600px;
+  width: 30%;
+  padding-right: 18px;
+  padding-left: 18px;
+  position: fixed;
+  float: right;
+  right: 0;
+  margin-top: 100px;
+}
+
+.main_map {
+  border: 1px solid lightgray;
+  height: 550px;
+  margin-left: 5px;
+  width: 100%;
+  margin-top: 0px;
 }
 
 #splash-inline ul {
-  width: 100%
+  width: 70%;
+  float: left;
+  overflow: scroll;
+  margin-top: 100px;
 }
+
+// #splash-inline ul:nth-child(1) {
+// }
 
 .single_spot_show:first-child {
   width: 100%;
@@ -99,7 +125,7 @@ li {
 
 #splash-inline{
   display: flex;
-  height: auto;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -117,6 +143,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: 20px;
+  margin-bottom: -50px;
+  // position: fixed;
 }
 
 #foot {

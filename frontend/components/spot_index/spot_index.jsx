@@ -11,8 +11,17 @@ class SpotIndex extends React.Component {
   render() {
     return (
       <div>
-        <h3><u>Homes</u></h3>
         <div id="splash-inline">
+          <div id="mapdiv">
+            <div class = "main_map">
+              <SpotMap
+                spots={this.props.spots}
+                updateFilter={this.props.updateFilter}
+                singleSpot={false}
+                fetchSpots={this.props.fetchSpots}
+                />
+            </div>
+          </div>
           <ul>
             {
               this.props.spots.map(spot => (
@@ -23,17 +32,6 @@ class SpotIndex extends React.Component {
               ))
             }
           </ul>
-          <div id="mapdiv">
-            <div>
-              <p>Zoom in over map to search</p>
-            </div>
-            <SpotMap
-              spots={this.props.spots}
-              updateFilter={this.props.updateFilter}
-              singleSpot={false}
-              fetchSpots={this.props.fetchSpots}
-            />
-          </div>
         </div>
         <footer>
           <div id = "partition"></div>

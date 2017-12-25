@@ -47,6 +47,8 @@ class Greeting extends React.Component {
 
           <div class="dropdown-content">
             <p>Bookings</p>
+            <p>Listings</p>
+            <p>Reviews</p>
             <p onClick={logout}>Logout</p>
           </div>
         </div>

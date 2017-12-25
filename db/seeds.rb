@@ -740,3 +740,215 @@ review45 = Review.create!(
   spot_id: house16.id,
   author_id: tyler.id
 );
+
+
+# BOOKINGS
+booking1 = Booking.create!(
+  spot_id: 1,
+  user_id: 1,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking2 = Booking.create!(
+  spot_id: 1,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking3 = Booking.create!(
+  spot_id: 1,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking4 = Booking.create!(
+  spot_id: 2,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking5 = Booking.create!(
+  spot_id: 2,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking6 = Booking.create!(
+  spot_id: 3,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking7 = Booking.create!(
+  spot_id: 3,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking8 = Booking.create!(
+  spot_id: 3,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking9 = Booking.create!(
+  spot_id: 4,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking10 = Booking.create!(
+  spot_id: 4,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking11 = Booking.create!(
+  spot_id: 4,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking12 = Booking.create!(
+  spot_id: 4,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking13 = Booking.create!(
+  spot_id: 5,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking14 = Booking.create!(
+  spot_id: 5,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking15 = Booking.create!(
+  spot_id: 6,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking16 = Booking.create!(
+  spot_id: 6,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking17 = Booking.create!(
+  spot_id: 6,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking18 = Booking.create!(
+  spot_id: 6,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking19 = Booking.create!(
+  spot_id: 6,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking20 = Booking.create!(
+  spot_id: 7,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking21 = Booking.create!(
+  spot_id: 7,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking22 = Booking.create!(
+  spot_id: 8,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking23 = Booking.create!(
+  spot_id: 8,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking24 = Booking.create!(
+  spot_id: 9,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking25 = Booking.create!(
+  spot_id: 9,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking26 = Booking.create!(
+  spot_id: 9,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking27 = Booking.create!(
+  spot_id: 2,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking28 = Booking.create!(
+  spot_id: 2,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking29 = Booking.create!(
+  spot_id: 2,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
+
+booking30 = Booking.create!(
+  spot_id: 2,
+  user_id: 9,
+  checkin_date: '2015-07-07',
+  checkout_date: '2015-08-08'
+);
