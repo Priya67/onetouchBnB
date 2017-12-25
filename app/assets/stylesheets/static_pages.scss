@@ -28,14 +28,12 @@ body {
   font-weight: bold;
 }
 
+// price and rating on index page
 .spot-index-item p {
   font-size: 15px;
 }
 
-h3 {
-  text-align: left;
-}
-
+// single li element for the image on the spot index page
 .spots_img {
   height: 275px;
   width: 340px;
@@ -43,39 +41,30 @@ h3 {
   border-radius: 3px;
 }
 
+// opactiy image hover effect
 .spots_img:hover {
     opacity:0.8;
     box-shadow: 2px 1px 3px rgba(249, 157, 157, 0.2);
     -webkit-animation: wiggle 0.1s ease-in-out 0.1s alternate 3;
 }
 
+// align all p in center
 div > p {
   text-align: center;
 }
 
-div > li {
-  // justify-content: space-around;
-}
-
+// li elements on the index page
 li {
-  // list-style: none;
   display: inline-block;
   padding-right: 20px;
 }
 
-#bed {
-  height: 17px;
-  width: 17px;
-  margin: 0px;
-  padding: 0px;
-  align-items: bottom;
-  vertical-align: bottom;
-}
-
+// inner most map div
 #mapdiv #map {
   height: inherit;
 }
 
+// taken out
 #mapdiv p{
   text-align: center;
   display: block;
@@ -83,6 +72,7 @@ li {
   float: right;
 }
 
+// outermost div for map
 #mapdiv {
   height: 600px;
   width: 30%;
@@ -94,6 +84,7 @@ li {
   margin-top: 100px;
 }
 
+// middle map div
 .main_map {
   border: 1px solid lightgray;
   height: 550px;
@@ -102,6 +93,7 @@ li {
   margin-top: 0px;
 }
 
+// the ul containing all the images on the splash page
 #splash-inline ul {
   width: 70%;
   float: left;
@@ -109,42 +101,40 @@ li {
   margin-top: 100px;
 }
 
-// #splash-inline ul:nth-child(1) {
-// }
-
-.single_spot_show:first-child {
-  width: 100%;
-  height: 400px;
-}
-
+// main div container for map and ul
 #splash-inline{
   display: flex;
   min-height: 100%;
   width: 100%;
 }
 
+// the ul component
 ul{
     padding: 0;
 }
 
-#partition {
-  background-color: gray;
-  width: 100%;
-  height: 2px;
-}
-
+// footer
 footer {
   bottom: 0;
   width: 100%;
   height: 50px;
 }
 
+// footer top div
+#partition {
+  background-color: gray;
+  width: 100%;
+  height: 2px;
+}
+
+// div container for name and links
 #foot {
   display: flex;
   justify-content: space-between;
   height: 50px;
 }
 
+// container to keep everything visible
 #foot div {
   margin-left: 50px;
   margin-right: 50px;
