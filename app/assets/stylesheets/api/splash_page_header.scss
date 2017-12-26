@@ -100,9 +100,13 @@ header {
   font-height: 25px;
   color: white;
   font-weight: none;
-  font-style: none;
+  // font-style: none;
+  text-decoration: none;
 }
 
+.dropdown-content a{
+  text-decoration: none;
+}
 // this is the list of all contents(all <p>)
 .dropdown-content {
     vertical-align: middle;
