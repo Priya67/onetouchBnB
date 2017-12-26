@@ -7,6 +7,7 @@ import Modal from 'react-modal';
 import SpotIndexContainer from './spot_index/spot_index_container';
 import SpotShowContainer from './spot_show/spot_show_container';
 import ReviewFormContainer from './spot_show/review_form_container';
+import BookingContainer from './booking/booking_container';
 
 const customStyles = {
   overlay : {
@@ -68,6 +69,7 @@ class App extends React.Component {
         <Route exact path="/spots/:spotId" component={SpotShowContainer} />
         <Route exact path="/" component={SpotIndexContainer} />
         <ProtectedRoute exact path="/spots/:spotId/review" component={ReviewFormContainer}/>
+        <Route path="/bookings/:id" component={BookingContainer} />
     </div>
     );
   }
@@ -75,5 +77,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-// <Route exact path="/bookings/:id" component={BookingsShowContainer} />

@@ -6,7 +6,7 @@ import SpotDetail from './spot_detail';
 import SpotMap from '../SpotMap/spot_map';
 import { ProtectedRoute } from '../../util/route_util';
 import { ReviewLink } from '../../util/link_util';
-import { BookingFormContainer } from './booking_form_container';
+// import { BookingFormContainer } from './booking_form_container';
 
 const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser,
                     currentUser, createBooking }) => {

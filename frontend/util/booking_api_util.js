@@ -1,8 +1,7 @@
-export const receiveBookings = user_id => (
+export const fetchBookings = id => (
   $.ajax({
     method: 'GET',
-    url: `api/bookings/${user_id}`,
-    date: {spot_id}
+    url: `api/bookings/${id}`,
   })
 );
 
@@ -10,6 +9,6 @@ export const createBooking = booking => (
   $.ajax({
     method: 'POST',
     url: 'api/bookings',
-    date: booking
+    data: booking
   })
 );

@@ -1,14 +1,19 @@
 import { connect } from 'react-redux';
 
-import { receiveBookings } from '../../actions/booking_actions';
+import { fetchBookings } from '../../actions/booking_actions';
 import Bookings from './bookings';
+import { asArray } from '../../reducers/selectors';
 
-const mapStateToProps = ({ bookings }) => ({
-  bookings: asArray(state.bookings)
-});
+const mapStateToProps = state => {
+  console.log("hey", state);
+  return {
+    bookings: state.entities.bookings,
+    currentUser: state.session.currentUser
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
-  receiveBookings: user_id => dispatch(receiveBookings(user_id))
+  fetchBookings: user_id => dispatch(fetchBookings(user_id))
 });
 
 export default connect(
