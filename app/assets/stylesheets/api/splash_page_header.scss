@@ -69,7 +69,8 @@ header {
 // drop-down menubar on user's profile image
 .dropbtn {
     color: white;
-    padding: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -97,6 +98,8 @@ header {
   margin: 0px;
   line-height: 40px;
   font-height: 25px;
+  color: white;
+  font-weight: none;
 }
 
 // this is the list of all contents(all <p>)
@@ -110,22 +113,14 @@ header {
     font-size: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1000;
-    background-color: lightblue;
+    background-color: #F08080;
+    // opacity: 0.4;
 }
-
-// Taken out
-// .dropdown-content a {
-//     color: black;
-//     padding: 12px 16px;
-//     text-decoration: none;
-//     display: block;
-// }
 
 // Hover effect on menubar list
 .dropdown-content p:hover {
-  font-size: 19px;
-  color: #3a4b78;
-  background-color: lightgray;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
 }
 
