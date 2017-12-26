@@ -5,9 +5,8 @@ import Bookings from './bookings';
 import { asArray } from '../../reducers/selectors';
 
 const mapStateToProps = state => {
-  console.log("hey", state);
   return {
-    bookings: state.entities.bookings,
+    bookings: asArray(state.entities.bookings),
     currentUser: state.session.currentUser
   };
 };

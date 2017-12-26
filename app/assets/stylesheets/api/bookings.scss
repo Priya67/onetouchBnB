@@ -3,6 +3,32 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #bookings-show {
-  margin-top: 100px;
+  margin-top: 85px;
+  text-align: center;
+  width: 100%;
   position: absolute;
+  // background-color: #FFE6E6;
+}
+
+#bookings-show ul {
+  display: inline-block;
+}
+
+#bookings-list img{
+  height: 350px;
+  width: 400px;
+}
+
+#bookings-list p {
+  font-size: 15px;
+}
+
+#bookings-list {
+  margin-bottom: 40px;
+}
+
+#bookings-list {
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid lightgray;
 }

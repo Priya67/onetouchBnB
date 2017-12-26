@@ -46,9 +46,8 @@ class Greeting extends React.Component {
           </div>
 
           <div class="dropdown-content">
-            <Link to={`/bookings/${currentUser.id}`}>Bookings</Link>
+            <Link to={`/bookings/${currentUser.id}`}><p>Bookings</p></Link>
             <p>Listings</p>
-            <p>Reviews</p>
             <p onClick={logout}>Logout</p>
           </div>
         </div>
