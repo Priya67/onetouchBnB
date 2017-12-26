@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20170929212626) do
     t.date "checkout_date", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["spot_id", "user_id"], name: "index_bookings_on_spot_id_and_user_id", unique: true
+    t.index ["spot_id", "checkin_date", "checkout_date"], name: "index_bookings_on_spot_id_and_checkin_date_and_checkout_date", unique: true
   end
 
   create_table "reviews", force: :cascade do |t|

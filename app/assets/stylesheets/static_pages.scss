@@ -36,11 +36,43 @@ body {
 // single li element for the image on the spot index page
 .spots_img {
   height: 275px;
-  width: 340px;
+  width: 100%;
+  min-width: 200px;
   border: 1px solid black;
   border-radius: 3px;
 }
 
+#index-ul li {
+  width: 31.5%;
+  // padding-right: 20px;
+}
+
+#index-ul li {
+    padding-right: 20px;
+}
+
+#index-ul li:nth-child(3n) {
+    padding-right: 0px;
+}
+
+@media screen and(max-width: 1400px) {
+  #index-ul li {
+    width: 46.5%;
+  }
+  #index-ul li:nth-child(odd) {
+    padding-right: 20px;
+  }
+}
+
+@media screen and(max-width: 950px) {
+  #index-ul li {
+    width: 98%;
+    padding-right: 20px;
+  }
+  .spots_img {
+    height: 350px;
+  }
+}
 // opactiy image hover effect
 .spots_img:hover {
     opacity:0.8;
@@ -56,7 +88,7 @@ div > p {
 // li elements on the index page
 li {
   display: inline-block;
-  padding-right: 20px;
+  // padding-right: 20px;
 }
 
 // inner most map div
@@ -95,10 +127,11 @@ li {
 
 // the ul containing all the images on the splash page
 #splash-inline ul {
-  width: 70%;
+  width: 68%;
   float: left;
   overflow: scroll;
   margin-top: 100px;
+  display: inline-block;
 }
 
 // main div container for map and ul
@@ -132,6 +165,8 @@ footer {
   display: flex;
   justify-content: space-between;
   height: 50px;
+  bottom: 0px;
+  background-color: pink;
 }
 
 // container to keep everything visible
