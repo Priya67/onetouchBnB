@@ -898,21 +898,21 @@ booking22 = Booking.create!(
 );
 
 booking23 = Booking.create!(
-  spot_id: 8,
+  spot_id: 16,
   user_id: 8,
   checkin_date: '2017-07-01',
   checkout_date: '2017-08-08'
 );
 
 booking24 = Booking.create!(
-  spot_id: 9,
+  spot_id: 11,
   user_id: 9,
   checkin_date: '2017-07-01',
   checkout_date: '2017-07-19'
 );
 
 booking25 = Booking.create!(
-  spot_id: 9,
+  spot_id: 14,
   user_id: 9,
   checkin_date: '2017-11-11',
   checkout_date: '2017-11-21'
@@ -926,28 +926,28 @@ booking26 = Booking.create!(
 );
 
 booking27 = Booking.create!(
-  spot_id: 2,
+  spot_id: 9,
   user_id: 10,
   checkin_date: '2017-09-11',
   checkout_date: '2017-09-17'
 );
 
 booking28 = Booking.create!(
-  spot_id: 2,
+  spot_id: 13,
   user_id: 11,
   checkin_date: '2017-03-21',
   checkout_date: '2017-03-27'
 );
 
 booking29 = Booking.create!(
-  spot_id: 2,
+  spot_id: 16,
   user_id: 11,
   checkin_date: '2017-04-17',
   checkout_date: '2017-04-26'
 );
 
 booking30 = Booking.create!(
-  spot_id: 2,
+  spot_id: 1,
   user_id: 11,
   checkin_date: '2017-06-18',
   checkout_date: '2017-06-19'

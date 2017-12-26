@@ -9,7 +9,9 @@ class SpotIndex extends React.Component {
   }
 
   componentWillMount() {
-    this.props.fetchBookings(this.props.currentUser.id);
+    if(this.props.currentUser != null) {
+      this.props.fetchBookings(this.props.currentUser.id);
+    }
   }
 
   render() {

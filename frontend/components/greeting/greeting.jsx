@@ -6,6 +6,7 @@ class Greeting extends React.Component {
   constructor(props) {
     super(props);
     this.state={actionType:""};
+    this.logoutUser = this.logoutUser.bind(this);
   }
 
   componentDidMount() {
@@ -29,6 +30,12 @@ class Greeting extends React.Component {
     );
   }
 
+  logoutUser() {
+    this.props.bookings = [];
+    console.log("sefnsj", this.props.bookings);
+    this.props.logout();
+  }
+
   personalGreeting(currentUser, logout) {
     return (
       <hgroup className="header-group">
@@ -47,8 +54,8 @@ class Greeting extends React.Component {
 
           <div class="dropdown-content">
             <Link to={`/bookings/${currentUser.id}`}><p>Bookings</p></Link>
-            <p>Listings</p>
-            <p onClick={logout}>Logout</p>
+            <Link to={`/listings/${currentUser.id}`}><p>Listings</p></Link>
+            <p onClick={this.logoutUser}>Logout</p>
           </div>
         </div>
 
