@@ -4,11 +4,11 @@ class Api::BookingsController < ApplicationController
   end
 
   def show
-    @booking = Booking.find(params[:id])
-    if @booking
+    @bookings = Booking.where(user_id: params[:id])
+    if @bookings.length != 0
       render :show
     else
-      render json: ["Invalid booking"]
+      render json: ["No bookings found"]
     end
   end
 

@@ -5,5 +5,5 @@ json.user do
 end
 
 json.spot do
-  json.extract! booking.spot, :id, :img_url, :headline
+  json.extract! booking.spot, :id, :img_url, :headline, :price, :location
 end
