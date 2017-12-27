@@ -78,14 +78,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production_dev:
-  <<: *default
-  database: OneTouchBnB_production
-  username: OneTouchBnB
-  password: <%= ENV['ONETOUCHBNB_DATABASE_PASSWORD'] %>
-
 production:
   <<: *default
-  database: HEROKU_POSTGRESQL_GRAY
+  database: OneTouchBnB_production
   username: OneTouchBnB
   password: <%= ENV['ONETOUCHBNB_DATABASE_PASSWORD'] %>
