@@ -78,8 +78,14 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
+production_dev:
   <<: *default
   database: OneTouchBnB_production
+  username: OneTouchBnB
+  password: <%= ENV['ONETOUCHBNB_DATABASE_PASSWORD'] %>
+
+production:
+  <<: *default
+  database: <%= ENV['ONETOUCHBNB_DATABASE'] %>
   username: OneTouchBnB
   password: <%= ENV['ONETOUCHBNB_DATABASE_PASSWORD'] %>
