@@ -40,7 +40,7 @@
   },
   "scripts": {
     "postinstall": "webpack",
-    "webpack:deploy": "webpack --config=webpack/webpack.config.js -p",
+    "webpack:deploy": "webpack",
     "heroku-postbuild": "npm run webpack:deploy"
   },
   "keywords": [],
