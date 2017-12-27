@@ -39,8 +39,7 @@
     "url": "git+https://github.com/Priya67/onetouchBnB.git"
   },
   "scripts": {
-    "postinstall": "webpack -p",
-    "start": "rails s"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
