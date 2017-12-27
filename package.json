@@ -34,12 +34,13 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "heroku-postbuild": "webpack --config webpack.config.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Priya67/onetouchBnB.git"
+  },
+  "scripts": {
+    "heroku-postbuild": "webpack",
+    "start": "webpack -w"
   },
   "keywords": [],
   "author": "",
@@ -49,7 +50,7 @@
   },
   "engines": {
     "node": "6.10.1",
-    "npm": "3.10.10"
+    "npm": "4.6.1"
   },
   "homepage": "https://github.com/Priya67/onetouchBnB#readme"
 }
