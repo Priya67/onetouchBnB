@@ -146,11 +146,11 @@ class SessionForm extends React.Component {
 
       <div id="select-image">
           <Dropzone
-            class="drop"
+            className="drop"
             multiple={false}
             accept="image/*"
             onDrop={this.onImageDrop.bind(this)}>
-            <div id="imagecloud">{this.state.uploadedFileCloudinaryUrl!="" ? <img height="200" width="200" opacity="0.8" src={this.state.uploadedFileCloudinaryUrl}/> : <p>select an image to upload</p>}</div>
+            <div id="imagecloud">{this.state.uploadedFileCloudinaryUrl!="" ? <img height="60" width="60" src={this.state.uploadedFileCloudinaryUrl}/> : <p>upload image</p>}</div>
           </Dropzone>
         </div>
 

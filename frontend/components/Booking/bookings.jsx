@@ -9,7 +9,7 @@ class Bookings extends React.Component {
     if(this.props.currentUser != null) {
       this.props.fetchBookings(this.props.currentUser.id);
     }
-    elsif(this.props.currentUser == null || this.props.bookings.length ===1) {
+    else if(this.props.currentUser == null || this.props.bookings.length ===1) {
       this.props.bookings = [];
     }
   }

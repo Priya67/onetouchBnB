@@ -21,7 +21,7 @@ const customStyles = {
   },
   content : {
     position                   : 'absolute',
-    top                   : '30%',
+    top                   : '37%',
     left                  : '50%',
     right                 : '60%',
     bottom                : 'auto',
