@@ -39,7 +39,7 @@
     "url": "git+https://github.com/Priya67/onetouchBnB.git"
   },
   "scripts": {
-    "heroku-postbuild": "webpack"
+    "postinstall": "webpack"
   },
   "keywords": [],
   "author": "",
