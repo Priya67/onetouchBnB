@@ -17,7 +17,7 @@ class SpotDetail extends React.Component {
         spot_id: 1,
         user_id: 1,
       },
-      booked: false
+      booked: false,
     };
     this.confirmBooking = this.confirmBooking.bind(this);
     this.check = this.check.bind(this);
@@ -43,6 +43,16 @@ class SpotDetail extends React.Component {
               />
           )));
         }
+    }
+
+    getDate() {
+      var today = new Date();
+      var dd = today.getDate();
+
+      var mm = today.getMonth()+1;
+      var yyyy = today.getFullYear();
+
+      return yyyy+'-'+mm+'-'+dd;
     }
 
   rating(length) {
@@ -178,6 +188,7 @@ class SpotDetail extends React.Component {
                     id="checking-dates"
                     type="date"
                     name="startDate"
+                    min={this.getDate()}
                     value={this.state.checkin_date}
                     onChange={this.handleChangeStart()}
                   />
@@ -190,6 +201,7 @@ class SpotDetail extends React.Component {
                     id="checking-dates"
                     type="date"
                     name="endDate"
+                    min={this.state.booking.checkin_date}
                     value={this.state.checkout_date}
                     onChange={this.handleChangeEnd()}
                   />
