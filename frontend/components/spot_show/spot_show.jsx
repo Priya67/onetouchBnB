@@ -26,7 +26,8 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser,
             fetchSpot={fetchSpot}
             fetchUser={fetchUser}
             createBooking={createBooking}
-            />
+            fetchBookings={fetchBookings}
+          />
           < br/>
 
           <Link to={`/spots/${spotId}/review`}

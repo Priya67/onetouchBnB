@@ -4,22 +4,30 @@ import ReviewShow from './review_show';
 import { DatePicker, SingleDatePicker} from 'react-dates';
 import moment from 'moment';
 import ReactConfirmAlert, { confirmAlert } from 'react-confirm-alert'; // Import
+import merge from 'lodash/merge';
 
 class SpotDetail extends React.Component {
   constructor(props) {
     super(props);
     this.rating = this.rating.bind(this);
     this.state={
-      startDate:'',
-      endDate: '',
+      booking: {
+        checkin_date: '',
+        checkout_date: '',
+        spot_id: 1,
+        user_id: 1,
+      },
       booked: false
     };
     this.confirmBooking = this.confirmBooking.bind(this);
     this.check = this.check.bind(this);
+    this.handleChangeStart = this.handleChangeStart.bind(this);
+    this.handleChangeEnd = this.handleChangeEnd.bind(this);
   }
 
   componentDidMount(){
     this.props.fetchSpot(this.props.spotId);
+
   }
 
   reviewList() {
@@ -49,24 +57,37 @@ class SpotDetail extends React.Component {
   }
 
   handleChangeStart() {
-    return e => this.setState({
-      startDate:e.currentTarget.value
-    });
+    return e => this.setState(
+      merge(this.state,
+        {
+          booking: {
+            checkin_date: e.currentTarget.value
+          }
+        }
+    ));
   }
 
   handleChangeEnd() {
-    return e => this.setState({
-      endDate:e.currentTarget.value
-    });
+    return e => this.setState(
+      merge(this.state,
+        {
+          booking: {
+            checkout_date: e.currentTarget.value
+          }
+        }
+    ));
   }
 
   confirmBooking() {
-    if(this.state.startDate!=='' && this.state.endDate!==''){
+    const booking = this.state.booking;
+    this.props.createBooking({ booking });
+    this.props.fetchBookings(this.props.currentUser.id);
+    if(this.state.checkout_date!=='' && this.state.checkin_date!==''){
       return (
         <div>
           <h4>Booking Confirmed</h4>
-          <p>From: {this.state.startDate}</p>
-          <p>To: {this.state.endDate}</p>
+          <p>From: {this.state.booking.checkin_date}</p>
+          <p>To: {this.state.booking.checkout_date}</p>
         </div>
       );
     }
@@ -74,6 +95,18 @@ class SpotDetail extends React.Component {
 
   check(e) {
     e.preventDefault();
+    if(this.props.currentUser != undefined) {
+      this.setState({booked: true});
+      this.setState(
+        merge(this.state,
+          {
+            booking: {
+              user_id: this.props.currentUser.id,
+              spot_id: this.props.spotId
+            }
+          }
+      ));
+    }
     this.props.currentUser ? this.setState({booked: true}) : alert('Please log in to book this place');
   }
 
@@ -145,7 +178,7 @@ class SpotDetail extends React.Component {
                     id="checking-dates"
                     type="date"
                     name="startDate"
-                    value={this.state.startDate}
+                    value={this.state.checkin_date}
                     onChange={this.handleChangeStart()}
                   />
                   <br />
@@ -157,7 +190,7 @@ class SpotDetail extends React.Component {
                     id="checking-dates"
                     type="date"
                     name="endDate"
-                    value={this.state.endDate}
+                    value={this.state.checkout_date}
                     onChange={this.handleChangeEnd()}
                   />
                   <br />

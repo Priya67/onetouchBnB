@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import { login, logout, signup } from './util/session_api_util';
 import { fetchSpots, fetchSpot, fetchUser, createReview, fetchReviews } from './actions/spot_actions';
 import configureStore from './store/store';
-import { fetchBookings } from './actions/booking_actions';
+import { fetchBookings, createBooking } from './actions/booking_actions';
 import Root from './components/root';
 
 //REMOVE THESE LINES
@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.fetchSpot = fetchSpot;
   window.fetchUser = fetchUser;
   window.fetchBookings = fetchBookings;
+  window.createBooking = createBooking;
   window.createReview = createReview;
   window.fetchReviews = fetchReviews;
   const root = document.getElementById('root');

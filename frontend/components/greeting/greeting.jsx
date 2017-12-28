@@ -32,7 +32,7 @@ class Greeting extends React.Component {
 
   logoutUser() {
     this.props.bookings = [];
-    console.log("sefnsj", this.props.bookings);
+    this.props.clearBookings();
     this.props.logout();
   }
 
