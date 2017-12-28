@@ -7,7 +7,7 @@ import Modal from 'react-modal';
 import SpotIndexContainer from './spot_index/spot_index_container';
 import SpotShowContainer from './spot_show/spot_show_container';
 import ReviewFormContainer from './spot_show/review_form_container';
-import BookingContainer from './booking/booking_container';
+import BookingContainer from './booking/booking_container.js';
 import ListingContainer from './listings/listing_container';
 
 const customStyles = {
