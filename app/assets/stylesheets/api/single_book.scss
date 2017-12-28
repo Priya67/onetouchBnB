@@ -22,10 +22,17 @@
   line-height: 3;
 }
 
+#booking-window form {
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
 #checking-dates {
   font-size: 18px;
-  padding: 5px;
-  margin: 0;
+  // padding: 5px;
+  width: inherit;
+  // margin: 0;
   text-align: right;
 }
 
