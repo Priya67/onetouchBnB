@@ -6,8 +6,8 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from 'react-modal';
 import SpotIndexContainer from './spot_index/spot_index_container';
 import SpotShowContainer from './spot_show/spot_show_container';
-import ReviewFormContainer from './spot_show/review_form_container';
 import BookingContainer from './booking/booking_container.js';
+import ReviewFormContainer from './spot_show/review_form_container';
 import ListingContainer from './listings/listing_container';
 
 const customStyles = {
@@ -69,9 +69,9 @@ class App extends React.Component {
         </header>
         <Route exact path="/spots/:spotId" component={SpotShowContainer} />
         <Route exact path="/" component={SpotIndexContainer} />
-        <ProtectedRoute exact path="/spots/:spotId/review" component={ReviewFormContainer}/>
-        <Route path="/bookings/:id" component={BookingContainer} />
+        <Route exact path="/bookings/:id" component={BookingContainer} />
         <Route path="/listings/:id" component={ListingContainer} />
+        <ProtectedRoute exact path="/spots/:spotId/review" component={ReviewFormContainer}/>
     </div>
     );
   }
