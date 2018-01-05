@@ -29,9 +29,8 @@ const SpotShow = ({ spot, user, spotId, fetchSpot, fetchUser,
             fetchBookings={fetchBookings}
           />
           < br/>
-
-          <Link to={`/spots/${spotId}/review`}
-            >Write Review</Link>
+        {currentUser ? <Link to={`/spots/${spotId}/review`}
+          >Write Review</Link> : <div id="nothing"></div>}
           <br />
         </div>
         <footer>

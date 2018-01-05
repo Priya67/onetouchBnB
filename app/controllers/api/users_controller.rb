@@ -16,9 +16,6 @@ def show
   render :show
 end
 
-# def destroy
-# end
-
 def user_params
   params.require(:user).permit(:username, :fname, :lname, :password, :email, :phone_number, :img_url)
 end

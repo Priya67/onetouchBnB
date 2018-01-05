@@ -4,11 +4,14 @@
 
 #single-review {
   padding-top: 15px;
-  border-bottom: 1px solid black;
   width: inherit;
   text-align: center;
   top: 0px;
   bottom: 0px;
+}
+
+#single-review:not(:last-child){
+  border-bottom: 1px solid black;
 }
 
 #single-review ul {
