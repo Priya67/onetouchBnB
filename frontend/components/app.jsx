@@ -67,11 +67,14 @@ class App extends React.Component {
             openSignIn={this.handleToggle('Sign In')}
             />
         </header>
-        <Route exact path="/spots/:spotId" component={SpotShowContainer} />
+        <ProtectedRoute exact path="/spots/:spotId" component={SpotShowContainer} />
         <Route exact path="/" component={SpotIndexContainer} />
-        <ProtectedRoute exact path="/spots/:spotId/review" component={ReviewFormContainer}/>
-        <Route path="/bookings/:id" component={BookingContainer} />
-        <Route path="/listings/:id" component={ListingContainer} />
+        <ProtectedRoute
+          exact path="/spots/:spotId/review"
+          component={ReviewFormContainer}
+        />
+        <ProtectedRoute path="/bookings/:id" component={BookingContainer} />
+        <ProtectedRoute path="/listings/:id" component={ListingContainer} />
     </div>
     );
   }
