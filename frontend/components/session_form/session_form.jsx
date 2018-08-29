@@ -49,7 +49,7 @@ class SessionForm extends React.Component {
     e.preventDefault();
     const user = this.state.user;
    this.props.processForm({ user }).then(() => this.props.closeModal());
-   this.props.fetchBookings(this.props.currentUser.id);
+   this.props.currentUser && this.props.fetchBookings(this.props.currentUser.id);
   }
 
   changedemo(e){
@@ -59,7 +59,7 @@ class SessionForm extends React.Component {
     }, () => {
       const user = this.state.user;
       this.props.processForm({ user }).then(() => this.props.closeModal());
-      this.props.fetchBookings(this.props.currentUser.id);
+      this.props.currentUser && this.props.fetchBookings(this.props.currentUser.id);
     });
   }
 
