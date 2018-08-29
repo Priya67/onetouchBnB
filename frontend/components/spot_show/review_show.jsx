@@ -18,10 +18,16 @@ const Review = ({rating, body, author}) => (
 function ratingDisplay(length) {
   let r = [];
   for(let i = 0; i<length; i++) {
-  r.push(<span class="fa fa-star checked"></span>);
+  r.push(<span
+    className="fa fa-star checked"
+    key={i + new Date().getUTCMilliseconds() + Math.random() * 500}
+  />);
   }
   for(let j = 0; j<5-length;j++) {
-    r.push(<span class="fa fa-star unchecked"></span>);
+    r.push(<span
+      className="fa fa-star unchecked"
+      key={j + new Date().getUTCMilliseconds() + Math.random() * (500-1) + 1}
+    />);
   }
   return r;
 }

@@ -31,7 +31,6 @@ class Greeting extends React.Component {
   }
 
   logoutUser() {
-    this.props.bookings = [];
     this.props.clearBookings();
     this.props.logout();
   }
@@ -42,9 +41,9 @@ class Greeting extends React.Component {
         <div id="user-pic">
         </div>
 
-        <div class="dropdown">
+        <div className="dropdown">
 
-          <div class ="dropbtn">
+          <div className ="dropbtn">
             {currentUser.img_url==="" ?
               <img src="https://res.cloudinary.com/dlgwlvcuy/image/upload/w_100,h_100,c_thumb,g_face/v1506118306/user_aiufn8.png" />
                 : <img src={currentUser.img_url}
@@ -52,7 +51,7 @@ class Greeting extends React.Component {
             }
           </div>
 
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <Link to={`/bookings/${currentUser.id}`}><p>Bookings</p></Link>
             <Link to={`/listings/${currentUser.id}`}><p>Listings</p></Link>
             <p onClick={this.logoutUser}>Logout</p>
