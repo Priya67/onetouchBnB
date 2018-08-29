@@ -65,7 +65,7 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     return(
-      <ol class="signuperror">
+      <ol className="signuperror">
         {this.props.errors.map((error, i) => (
           <li key={i}>
             { error }

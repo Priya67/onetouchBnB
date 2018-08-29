@@ -19,7 +19,7 @@ class SpotIndex extends React.Component {
       <div>
         <div id="splash-inline">
           <div id="mapdiv">
-            <div class = "main_map">
+            <div className = "main_map">
               <SpotMap
                 spots={this.props.spots}
                 updateFilter={this.props.updateFilter}

@@ -19,15 +19,17 @@ class Bookings extends React.Component {
       <div id="bookings-show">
         <h3>My Bookings</h3>
         <ul>
-          {this.props.bookings[0]==="No bookings found" ? <div id="no_booking">No bookings found</div> : this.props.bookings.map((booking,i) => (
-            <li id="bookings-list">
-              <img src={this.props.bookings[i].spot.img_url} />
-              <p>{this.props.bookings[i].spot.headling}</p>
-              <p><i>Address</i> : {this.props.bookings[i].spot.location}</p>
-              <p><i>Checkin date</i> : {this.props.bookings[i].checkin_date}</p>
-              <p><i>Checkout date</i> : {this.props.bookings[i].checkout_date}</p>
-              <br/>
-            </li>
+          {this.props.bookings[0]==="No bookings found"
+            ? <div id="no_booking">No bookings found</div>
+            : this.props.bookings.map((booking,i) => (
+              <li id="bookings-list" key={this.props.bookings[i].spot.id}>
+                <img src={this.props.bookings[i].spot.img_url} />
+                <p>{this.props.bookings[i].spot.headling}</p>
+                <p><i>Address</i> : {this.props.bookings[i].spot.location}</p>
+                <p><i>Checkin date</i> : {this.props.bookings[i].checkin_date}</p>
+                <p><i>Checkout date</i> : {this.props.bookings[i].checkout_date}</p>
+                <br/>
+              </li>
             ))
           }
         </ul>
