@@ -46,12 +46,12 @@ class SpotIndex extends React.Component {
               <p>Developed by <b>Priya Mangal</b></p>
             </div>
             <div id = "foot_links">
-              <Link to="https://www.linkedin.com/in/priyamangal">
+              <a target="_blank" href="https://www.linkedin.com/in/priyamangal">
                 <img src="li.png" alt="li" height="30" width="30"/>
-              </Link>
-              <Link to="https://github.com/Priya67">
+              </a>
+              <a target="_blank" href="https://github.com/Priya67">
                 <img src="github.png" alt="github" height="30" width="30"/>
-              </Link>
+              </a>
             </div>
           </div>
         </footer>
